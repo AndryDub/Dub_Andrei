@@ -22,14 +22,6 @@
 		line-height: 160%;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 	}
-
-	
-	IMG.fig{
-			float: right; /* Обтекание картинки по левому краю */
-			margin-right: 10px;
-			margin-left: 10px;
-			margin-bottom: 10px;
-		}
 	</style>
 
 	<title>FONT</title>
@@ -79,21 +71,21 @@
 </p>
 <p>
 «0F0F00» ведет себя так, как ожидалось, становясь RGB (0F, 0F, 00). На этом этапе выполняется любая строка из 6 символов <spam style="background: #0F0F00; color: #FFF;">&laquo;0F0F00&raquo;</spam>.
-</p>
-<div style="border: solid 3px #24977e; padding: 10px 30px;">
+</p><br>
+<div style="border: solid 3px #24977e; padding: 10px;">
 	<img src="img/Candy.png" 
-				style="float: right;
-				width: 350px;
-				height: px;
-				margin: 5px">
-		<div style="border: solid 1px transparent; margin-right: 600px; float: left;">
+			style="float: right;
+			width: 350px;
+			margin: 15px 5px 5px 10px">
+		<!--<div style="border: solid 1px transparent; margin-right: 600px; float: left;">-->
+		<div style="border: solid 1px transparent; margin-right: 400px; padding: 20px;">
 			<strong>
 			<p> Опишем на нашем примере, <spam style="background: #fff; color: #bc0d00;">&lt;font color=""#CANDY""&gt;...&lt;/font&gt;</spam></p>
 			<p>Заменяем все неправильные шестнадцатеричные символы нулями, CANDY и представляем собой значение из 5-ти символов &laquo;CA0D0&raquo;.</p>
 			<p>Дополняем поле нулём справа, чтобы получить полное число кратное 3, которое становиться <spam style="white-space: nowrap">RGB (CA, 0D, 00)</spam> и браузер отобразит текст в цвете <spam style="background: #ca0d00; color: #FFF;">&laquo;#ca0d00&raquo;</spam>
 			</p>
-		</strong>
-		<div style="clear: both"></div>
+			</strong>
+			<div style="clear: both"></div>
 	</div>
 </div>
 <h3>5. Более длинные строки, такие как "1234567890ABCDE", становятся <em>RGB(12345, 67890, ABCDE)</em>. Точно так же разбиваются очень длинные строки. «1234567890ABCDE1234567890ABCDE» становится <em>RGB(1234567890, ABCDE12345, 67890ABCDE)</em>.
@@ -111,8 +103,14 @@ RGB(1234567890, ABCDE12345, 67890ABCDE) становится RGB(34567890, CDE12
 <p>
 RGB(34567890, CDE12345, 890ABCDE) становится RGB(34, CD, 89) или <spam style="background: #34CD89; color: #FFF;">#34CD89</spam> в более традиционной записи.
 </p><br>
-<div style="border: solid 3px #24977e; padding: 10px 30px"><img src="img/BruceWillis.jpg" alt="foto" width="350px" height="" class="fig"title="Bruce Willis">
-		<strong>
+<div style="border: solid 3px #24977e; padding: 10px;">
+	<img src="img/BruceWillis.jpg" 
+			style="float: right;
+			width: 350px;
+			margin: 15px 5px 5px 10px">
+		<!--<div style="border: solid 1px transparent; margin-right: 600px; float: left;">-->
+		<div style="border: solid 1px transparent; margin-right: 450px; padding: 20px;">
+			<strong>
 			<p>
 			Опишем на нашем примере, <spam style="background: #fff; color: #b0e000;">&lt;font color=""#BruceWillis""&gt;...&lt;/font&gt;</spam></p>
 			<p>
@@ -121,7 +119,9 @@ RGB(34567890, CDE12345, 890ABCDE) становится RGB(34, CD, 89) или <s
 			Дополняем поле нулём справа, чтобы получить полное число кратное 3, которое становиться <spam style="white-space: nowrap">RGB (B00C, E000, 0000)</spam>.</p>
 			<p>
 			Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат <spam style="white-space: nowrap">RGB (B0, E0, 00)</spam>, который отобразиться в браузере, текстом, в цвете <spam style="background: #b0e000; color: #FFF;">&laquo;b0e000&raquo;</spam>.</p>
-		</strong>
+			</strong>
+			<div style="clear: both"></div>
+	</div>
 </div>
 <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 22px;">
 	<strong>
