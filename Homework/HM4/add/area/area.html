@@ -11,6 +11,7 @@
 /*<code class="inline-code code-fix font-theme font-theme--code">&lt;area&gt;</code>  -  не прописывается сод в кавычках*/
 	
 		body{
+		width: 100%;
 		font-size: 20px;
 		line-height: 30px;
 		font-family: 'Armata', sans-serif;
@@ -23,22 +24,48 @@
 	}
 
 	.map-container {
+		border: 3px solid #fff;
 	margin: 0 auto;
 	width: 100%;
 	padding-top: 76px;
 	display: inline-block;
 	border-bottom: 1px solid transparent;
-		text-align: center;
+	text-align: center;
 }
 
 	figure{
-	width: max-content;
+	object-fit: cover;
+	width: fit-content;
 	float: left;
 	margin: 0 0 0 3.5%;
 	background: #0f0f0f;
 	border-radius: 5px;
 	padding: 2%;
 }
+/*
+.wrapper{
+	position: relative;
+	padding-top: 56.25%; /*16:9 Aspect Ratio*/
+}
+*/
+/*
+img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+}*/
+
+/*
+.responsive{
+	width: 100%;
+	/*max-width: 100%*/ /* - Если требуется, чтобы изображение было масштабировано, но никогда не масштабируется до размера, превышающего его исходный размер - */
+	/*max-width: 400px;*/ /* - если требуется ограничить адаптивный образ максимальным размером - */
+	/*height: auto;
+	object-fit: cover;
+}*/
+
 
 </style>
 
@@ -47,9 +74,9 @@
 </head>
 <body>
 
-
+<div>
 <div style="background: rgb(231, 129, 13);
-		height: 120px;">
+		padding: 20px;">
 	<h1>
 		&lt;area&gt;
 	</h1>
@@ -58,7 +85,7 @@
 		</p>
 </div>
 
-	<div style="background: transparent; float: left; width: 20%; margin-top: 20px;">
+	<div style=" width: 20%; float: left;  margin-top: 20px;">
 			<ul style="list-style-type: none; font-size: medium; color: #fff;">
 				<li><a style="color: #fff;" href="#кратко">Кратко</a></li>
 				<li><a style="color: #fff;" href="#пример">Пример</a></li>
@@ -68,11 +95,10 @@
 			</ul>
 	</div>
 
-	<div style="background: transparent; float: right; width: 150px;">
+	<div style="width: 150px; float: right;">
 	</div>
 
-<div style="background: transparent;
-	margin-left: 20%;
+<div style="margin-left: 200px;
 	margin-right: 150px;
 	max-width: auto;">
 	<p>
@@ -84,7 +110,7 @@
 		<span style="border-radius: 10px; display: unset; background: rgb(70, 71, 71); padding: 0 5px;">&lt;area&gt;</span> 
 		можно сделать красивую навигацию, разметив обычную картинку областями и указав для них ссылки.
 	</p>
-	<div style="border-radius: 10px; background: rgb(70, 71, 71); padding: 25px; width: max-content">
+	<div style="border-radius: 10px; background: rgb(70, 71, 71); padding: 25px; width: fit-content">
 		<span style="border-radius: 10px; display: unset; background: rgb(31, 30, 30); padding: 0 10px;">&lt;area&gt;</span>
 		не знает как жить без тега-контейнера 
 		<span style="border-radius: 10px; display: unset; background: rgb(31, 30, 30); padding: 0 10px;">&lt;map&gt;</span>
@@ -96,16 +122,16 @@
 		<a name="пример"></a>
 	</p>
 	<h2>Пример</h2>
-		<p>Элементарная навигация по солнечной системе:
+		<p>Элементарная навигация по курсу "Разработка web-сайтов с использованием HTML, CSS и JavaScript":
 		</p>
 
-<div>
   <p style="border-radius: 10px; display: unset; font-size: small; background: rgb(70, 71, 71); padding: 0 5px;">
 		HTML
 	</p>
-	<div style="width: 850px; height: 400px; border: 1px solid transparent; background-color: black; padding: 0 10px; overflow: auto;">
-<pre> <!--data-lang="HTML" - как работает??-->
-<code style="width: 400px; height: 150px; border: 1px solid transparent; overflow: auto; background-color: black;">
+
+<div style="background-color: black; padding: 0 20px;">
+	<pre style="display: block; margin-top: 0; margin-bottom: 5px; overflow: auto; font-size: 18px;"> 
+		<code >
 1 &lt;map name="webmap"&gt;
 2   &lt;area target="_blank" alt="HTML" title="HTML"
 3   href="https://www.w3schools.com/html/" coords="48,4,319,66" shape="rect"&gt;
@@ -115,9 +141,8 @@
 7   href="https://www.w3schools.com/js/" coords="48,132,318,192" shape="rect"&gt;
 8 &lt;/map&gt;
 9 &lt;img src="img/HTML_CSS_JS.png" alt="Web" usemap="#webmap"&gt;
-</code>
+		</code>
 	</pre>
-</div>
 </div><br>
 
 <div style="background-position: center;">
@@ -129,7 +154,7 @@
 		<area target="_blank" alt="JS" title="JS"
 		href="https://www.w3schools.com/js/" coords="48,132,318,192" shape="rect">
 	</map><br>
-	<img style="float:none; margin-left: 350px;" src="img/HTML_CSS_JS.png" alt="Web" usemap="#webmap"><br>
+	<img style="display: block; margin-left: auto; margin-right: auto;" src="img/HTML_CSS_JS.png" alt="Web" usemap="#webmap"><br>
 </div>
 
 <p>
@@ -204,13 +229,13 @@
 	</li>
 </ul><br>
 
-<div style="border-radius: 10px; background: rgb(70, 71, 71); padding: 25px; ">
+<div style="border-radius: 10px; background: rgb(70, 71, 71); padding: 25px; width: fit-content;">
 	Если атрибут
 	<span style="border-radius: 10px; display: unset; background: rgb(31, 30, 30); padding: 0 10px;">href</span>
 	отсутствует, то все остальные атрибуты, кроме
 	<span style="border-radius: 10px; display: unset; background: rgb(31, 30, 30); padding: 0 10px;">shape</span>
 	и
-	<span style="border-radius: 10px; display: unset; background: rgb(31, 30, 30); padding: 0 10px;">coords</span>,
+	<span style="border-radius: 10px; display: inline; background: rgb(31, 30, 30); padding: 0 10px;">coords</span>,
 	должны быть опущены.
 </div><br>
 
@@ -239,16 +264,16 @@
 		можно разметить на картинке отдельные предметы и сделать целый каталог:
 	</p>
 	<p><strong>Для создания координат активной области, я использовал бесплатный онлайн-генератор карт изображений:</strong><br>
-		<a target="_blank" alt="бесплатный онлайн-генератор карт изображений" href="https://www.image-map.net/" style="color: #fff" >www.image-map.net/</a>
+		<a target="_blank" alt="Бесплатный онлайн-генератор карт и изображений" href="https://www.image-map.net/" style="color: #e24e4e">www.image-map.net/</a>
 	</p>
 
 <div>
 		<p style="border-radius: 10px; display: unset; font-size: small; background: rgb(70, 71, 71); padding: 0 5px;">
 			HTML
 		</p>
-<div style="width: 1080px; height: 790px; border: 1px solid transparent; background-color: black; padding: 0 10px; overflow: auto;">
-<pre>
-	<code>
+		<div style="background-color: black; padding: 0 20px;">
+			<pre style="display: block; margin-top: 0; margin-bottom: 5px; overflow: auto; font-size: 18px;"> 
+				<code >
 1  &lt;map name="planetsmap"&gt;
 2    &lt;area target="_blank" alt="Солнце" title="img_Солнце"
 3    href="https://ru.wikipedia.org/wiki/Солнце" coords="4,559,1,1,35,0,60,20,85,47,107,78,124,112,142,154,155,188,162,226,162,264,161,302,156,341,147,370,138,408,117,442,95,475,72,501,41,527" shape="poly"&gt;
@@ -272,9 +297,8 @@
 21   href="https://ru.wikipedia.org/wiki/Плутон" coords="893,20,10" shape="circle"&gt;
 22 &lt;/map&gt;
 23 &lt;img src="img/sun_sistem2.jpg" alt="Кликабельная картинка солнечной системой" usemap="#planetsmap"&gt;
-	</code>
-</pre>
-</div>
+		</code>
+	</pre>
 </div><br>
 
 <p style="text-align: center;">Нажмите на одну из планет, чтобы узнать о ней больше:
@@ -302,10 +326,15 @@
 			<area target="_blank" alt="Плутон" title="Плутон"
 			href="https://ru.wikipedia.org/wiki/Плутон" coords="893,20,10" shape="circle">
 		</map>
-	<figure>
-		<img src="img/sun_sistem2 1000-640.png" alt="Кликабельная картинка солнечной системой" usemap="#planetsmap">
-	</figure>
+			<figure>
+				<img src="img/sun_sistem2 1000-640.png" alt="Кликабельная картинка солнечной системой" class="responsive" usemap="#planetsmap">
+				<figcaption>
+					С изображением конечно получился - косяк)))<br>
+					Несколько раз переделывал и заново отбивал все точки через онлайн-генератор, но так и не понял,как всё-таки сделать изображение, которое будет адаптивным (резиновым) и в нём не будут сбиваться, в зависимости от разрешения изображения, связанные с ним координаты областей.
+				</figcaption>
+			</figure>
 		</div>
+	</div>
 </div>
 
 </body>
