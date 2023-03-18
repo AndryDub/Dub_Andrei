@@ -1,0 +1,28 @@
+table{
+	border-collapse: collapse;
+}
+
+td{
+	padding: 20px 25px;
+}
+
+
+/*td:first-child, td:last-child{
+	border-color: fuchsia;
+	background-color: aqua;
+}
+
+td:nth-child(3){
+	border-color: blue;
+	background-color: brown;
+}*/
+
+tr:nth-child(odd) td:nth-child(odd){
+	/* odd - все нечетные элементы в контейнере */
+	background-color: black;
+}
+
+tr:nth-child(even) td:nth-child(even){
+	/* even - все чётные элементы в контейнере */
+	background-color: black;
+}
