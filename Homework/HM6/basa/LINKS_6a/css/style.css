@@ -30,7 +30,7 @@ body {
 	margin-top: 0;
 	margin-bottom: 5px;
 	overflow: auto;
-	background-color: #c4c2b3;
+	background-color: #ffffff;
 }
 
 .text{
@@ -45,7 +45,7 @@ body {
 
 h2 {
 	padding: 10px 20px;
-	color:rgb(255, 0, 242)
+	color: rgba(0, 183, 255, 0.8);
 }
 
 p {
