@@ -5,48 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="css/chess.css"> Стили CSS - отключены-->
-
-	<style>
-
-		table.CHESS {
-			border-collapse: collapse;
-		}
-
-		table.CHESS td {
-			width: 50px;
-			height: 50px;
-			border: solid gray 1px;
-		}
-
-		tr:nth-child(even) td:nth-child(odd) {
-			/* even - все чётные элементы в контейнере */
-			background-color: black;
-		}
-
-		tr:nth-child(odd) td:nth-child(even) {
-			/* odd - все нечетные элементы в контейнере */
-			background-color: black;
-		}
-
-		tr:first-of-type, td:first-of-type {
-			background-color: rgba(0, 170, 0, 0.747);
-		}
-
-		tr:last-of-type, td:last-of-type{
-			background-color: rgba(0, 170, 0, 0.747);
-		}
-
-		.top_line{
-			background-color:rgba(0, 170, 0, 0.747);
-		}
-
-	</style>
+	<link rel="stylesheet" href="css/chess.css">
 
 	<title>CSS_chess</title>
 
 	<table class='CHESS'>
-		<tr class="top_line">
+		<tr>
 			<td></td>
 			<td></td>
 			<td></td>
