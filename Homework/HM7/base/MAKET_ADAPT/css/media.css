@@ -1,0 +1,90 @@
+/* -- Медиа запрос -- */
+
+@media all and (max-width: 1280px) {
+	container {
+		width: 1200px;
+	}
+}
+
+@media all and (max-width: 1015px) {
+	container {
+		width: 1015px;
+	}
+	.all_img {
+		background: url("../img/300px_1200px.png") 20% top repeat-y;
+	}
+
+	.posts-list {
+		/* float: none; */
+		/* margin-left: 100px; */
+		margin-right: 100px;
+	}
+
+	.banner_list {
+		width: 100px;
+		/* float: right; */
+		text-align: center;
+		margin-top: 240px;
+		font-size: x-large;
+	}
+	.banner_img {
+		background: url("../img/100_50_right_list.png") right top repeat-y;
+	}
+
+	.img_right_top_2boll {
+		background: url("../img/200_100px_2boll.png") no-repeat 100% 0%;
+	}
+
+	.img_right_bottom_2boll {
+		background: url("../img/200_100px_2boll.png") no-repeat 100% 100%;
+	}
+
+	.img_boll_top_right {
+		background: url("../img/ball3.png") 100% 20% no-repeat;
+	}
+
+	.img_boll_bottom_right {
+		background: url("../img/ball3.png") 100% 77% no-repeat;
+	}
+	.img_boll_top_left {
+		background: url("../img/ball3.png") 0% 20% no-repeat;
+	}
+
+	.img_boll_bottom_left {
+		background: url("../img/ball3.png") 0% 77% no-repeat;
+	}
+	.aside-list {
+		width: 100px;
+		/* float: left; */
+	}
+}
+
+@media all and (max-width: 810px) {
+	container {
+		width: 810px;
+	}
+	.fig {
+		width: 70%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+	@media all and (max-width: 740px) {
+		container {
+			width: 740px;
+		}
+		.widget-categori-list {
+			padding-left: unset;
+		}
+		.widget-categori-list a {
+			font-size: 13px;
+		}
+		.banner_list {
+			margin-top: 300px;
+		font-size: 18px;
+		}
+		h2{
+			font-size: 26px;
+		}
+}

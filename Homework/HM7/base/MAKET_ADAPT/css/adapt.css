@@ -17,7 +17,7 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-	max-width: 1250px;
+	max-width: 1350px;
 
 	/* background-position: 20% top; */
 }
@@ -62,24 +62,24 @@ h2 {
 }
 
 .img_boll_top_left {
-	background: url("../img/ball3.png") top left no-repeat;
+	background: url("../img/ball3.png") 0% 0% no-repeat;
 }
 
 .img_boll_bottom_left {
-	background: url("../img/ball3.png") bottom left no-repeat;
+	background: url("../img/ball3.png") 0% 100% no-repeat;
 }
 
 .img_boll_top_right {
-	background: url("../img/ball3.png") top right no-repeat;
+	background: url("../img/ball3.png") 100% 0% no-repeat;
 }
 
 .img_boll_bottom_right {
-	background: url("../img/ball3.png") bottom right no-repeat;
+	background: url("../img/ball3.png") 100% 100% no-repeat;
 }
 
 /* -- Левый блок -- */
 .aside-list {
-	width: 20%;
+	width: 100px;
 	float: left;
 }
 
@@ -149,7 +149,7 @@ h4 {
 	width: 200px;
 	float: right;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 210px;
 	font-size: x-large;
 }
 
@@ -191,7 +191,7 @@ h3 {
 	height: auto;
 	padding: 10px;
 	margin: 0 10px 5px 0;
-	max-width: 300px;
+	max-width: 400px;
 	object-fit: cover;
 	float: left;
 }
@@ -202,8 +202,12 @@ p {
 	padding: 10px;
 }
 
-/* -- Нижний блок "ПОДВАЛ" --*/
+/* Clear */
+.clear {
+	clear: both;
+}
 
+/* -- Нижний блок "ПОДВАЛ" --*/
 .logo-bottom {
 	background: rgb(94, 157, 239);
 	padding: 20px;
@@ -217,10 +221,3 @@ h2 {
 	word-spacing: 5px;
 	color: blue;
 }
-
-
-
-/* -- Медиа запрос -- */
-/* - отменяем обтекание левой и правой колонок, устанавливаем им ширину 100% - */
-
-/*добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
