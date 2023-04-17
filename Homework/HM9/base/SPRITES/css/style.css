@@ -1,0 +1,104 @@
+/* .fon{
+	background-attachment: fixed;
+	background-image: url('../img/1618534293_5-funart_pro-p-oboi-fon-multyashnii-les-5.png') ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	} */
+.container {
+	padding: 20px;
+	position: relative;
+}
+
+/* .block_earth{
+	position: relative;
+} */
+.block_earth_anime {
+	position: absolute;
+	top: 30px;
+	right: 100px;
+}
+
+.sprite_earth {
+	width: 87px;
+	height: 87px;
+	background-image: url("../img/Planet_Earth_2.png");
+	position: absolute;
+	left: 0px;
+	animation: Fire_illustration 4s steps(30) infinite;
+}
+
+@keyframes Fire_illustration {
+	/* from { background: url('../img/png-transparent-fire1-illustration-sprite-animation.png') 0 0; }
+		to { background: url('../img/png-transparent-fire1-illustration-sprite-animation.png') -2000px 0; } */
+	from {
+		background-position: 0px;
+	}
+	to {
+		background-position: -2600px;
+	}
+}
+
+/* .block {
+	position: absolute;
+} */
+
+.animation_sprite {
+	position: absolute;
+	display: flex;
+	left: 100px;
+	top: 50px;
+	/* min-height: 80vh; */
+	align-items: center;
+}
+
+.sprite_bear {
+	height: 125px;
+	width: 200px;
+	background: url("../img/bear.jpg") 0px 0px;
+	animation: bear 1.5s steps(12) infinite, step_bear 12s linear infinite;
+	position: absolute;
+	left: 0px;
+}
+
+@keyframes bear {
+	from {
+		background-position: 0px;
+	}
+	to {
+		background-position: 2400px;
+	}
+}
+
+@keyframes step_bear {
+	100% {
+		left: 80%;
+	}
+}
+
+/* Animation_Viking */
+.sprite_container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	}
+
+.sprite_viking {
+	height: 850px;
+	width: 1030px;
+	background: url("../img/Viking.jpg") 0px 0px;
+	animation: play 2s steps(10) infinite, step 12s linear infinite;
+	position: absolute;
+	left: 0px;
+}
+
+@keyframes play {
+	100% {
+		background-position: -10320px;
+	}
+}
+
+@keyframes step {
+	100% {
+		left: 100%;
+	}
+}
