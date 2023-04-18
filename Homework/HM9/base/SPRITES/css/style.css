@@ -14,8 +14,8 @@
 } */
 .block_earth_anime {
 	position: absolute;
-	top: 30px;
-	right: 100px;
+	top: 20px;
+	left: 20px;
 }
 
 .sprite_earth {
@@ -24,10 +24,11 @@
 	background-image: url("../img/Planet_Earth_2.png");
 	position: absolute;
 	left: 0px;
-	animation: Fire_illustration 4s steps(30) infinite;
+	transform: scale(1.3);
+	animation: Earth_illustration 4s steps(30) infinite;
 }
 
-@keyframes Fire_illustration {
+@keyframes Earth_illustration {
 	/* from { background: url('../img/png-transparent-fire1-illustration-sprite-animation.png') 0 0; }
 		to { background: url('../img/png-transparent-fire1-illustration-sprite-animation.png') -2000px 0; } */
 	from {
@@ -43,10 +44,10 @@
 } */
 
 .animation_sprite {
-	position: absolute;
+	/* position: absolute; */
 	display: flex;
-	left: 100px;
-	top: 50px;
+	/* left: 100px;
+	top: 50px; */
 	/* min-height: 80vh; */
 	align-items: center;
 }
@@ -55,9 +56,10 @@
 	height: 125px;
 	width: 200px;
 	background: url("../img/bear.jpg") 0px 0px;
-	animation: bear 1.5s steps(12) infinite, step_bear 12s linear infinite;
+	animation: bear 1.2s steps(12) infinite, step_bear 10s linear infinite;
 	position: absolute;
 	left: 0px;
+	transform: scale(1.5);
 }
 
 @keyframes bear {
@@ -86,9 +88,11 @@
 	height: 850px;
 	width: 1030px;
 	background: url("../img/Viking.jpg") 0px 0px;
-	animation: play 2s steps(10) infinite, step 12s linear infinite;
+	animation: play 1s steps(10) infinite, 
+			step 10s linear infinite;
 	position: absolute;
 	left: 0px;
+	transform: scale(0.3);
 }
 
 @keyframes play {
