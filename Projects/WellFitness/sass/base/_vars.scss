@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 $fs: 18px;
 $mainColor: red;
 
@@ -5,3 +11,4 @@ body{
 	font-size: $fs;
 	color: $mainColor;
 }
+
