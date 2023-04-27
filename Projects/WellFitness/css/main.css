@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   max-width: 1920px;
   margin-left: auto;
@@ -14,9 +15,33 @@
           box-sizing: border-box;
 }
 
-body {
-  font-size: 18px;
-  color: red;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 0px 20px;
+  gap: 323px;
+  width: 1410px;
+  height: 82px;
+  /* темно-серый */
+  background: #1a1a25;
+  /* Inside auto layout */
+}
+header img {
+  width: 280px;
+  height: 28.9px;
 }
 
 /*# sourceMappingURL=main.css.map */
