@@ -1,22 +1,134 @@
 header {
+	width: 1920px;
+	height: 203px;
+	top: calc(50% - 203px / 2 - 3924px);
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 24px 0px 20px;
-	gap: 323px;
-	width: 1410px;
-	height: 82px;
-	/* темно-серый */
+	flex-direction: column;
+	align-items: center;
 	background: #1a1a25;
-	/* Inside auto layout */
-	// flex: none;
-	// order: 1;
-	// flex-grow: 0;
-	img {
-		width: 280px;
-		height: 28.9px;
+	.conteiner_header {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		width: 1410px;
+		height: 82px;
+		img {
+			width: 280px;
+			height: 28.9px;
+		}
+
+		.btn_dropdown_city {
+			margin-left: 50px;
+			select {
+				width: 70px;
+				border: 1px solid #858fa4;
+				border-radius: 5px;
+				background: #1a1a25;
+				font-size: 14px;
+				line-height: 140%;
+				color: #858fa4;
+				cursor: pointer;
+			}
+		}
+
+		.partners {
+			ul {
+				display: flex;
+				align-items: center;
+				gap: 30px;
+				margin-left: 150px;
+				p {
+					width: 89px;
+					font-size: 14px;
+					line-height: 140%;
+					color: #909cb5;
+				}
+				.btn_partners {
+					padding: 10px;
+					width: 142px;
+					// height: 37px;
+					background: #384255;
+					border-radius: 6px;
+					/* txt / button */
+					font-family: "Inter", sans-serif;
+					font-weight: 700;
+					font-size: 14px;
+					line-height: 17px;
+					color: #f7f7f7;
+				}
+				.vertical_stripe {
+					width: 1px;
+					height: 30px;
+					background: rgba(133, 143, 164, 0.15);
+					border-radius: 1px;
+					margin-right: 30px;
+				}
+			}
+		}
+
+		.contacts {
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				li:first-child {
+					a {
+						font-family: "Inter", sans-serif;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 17px;
+						color: #ffffff;
+					}
+				}
+				.btn_dropdown_city_contacts {
+					select {
+						border: 1px solid #858fa4;
+						border-radius: 5px;
+						background: #1a1a25;
+						font-size: 14px;
+						line-height: 140%;
+						color: #858fa4;
+						cursor: pointer;
+						line-height: 17px;
+						color: #909cb5;
+						margin-left: 5px;
+						margin-right: 30px;
+					}
+				}
+				li:last-child {
+					a {
+						font-size: 14px;
+						line-height: 140%;
+						color: #f53b49;
+					}
+				}
+				.vertical_stripe {
+					width: 1px;
+					height: 30px;
+					background: rgba(133, 143, 164, 0.15);
+					border-radius: 1px;
+					margin-right: 30px;
+					margin-left: 30px;
+				}
+			}
+		}
+
+		.btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 8.5px 0;
+			gap: 14px;
+			width: 76px;
+			height: 20px;
+			/* txt/meny2 */
+			font-size: 14px;
+			line-height: 140%;
+			color: #ffffff;
+			background: #1a1a25;
+			cursor: pointer;
+		}
 	}
 }
+@import "./blocks/nav";
