@@ -3,8 +3,9 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 	padding: 16px 0px;
-	gap: 211px;
+	gap: 100px;
 	width: 1410px;
 	height: 81px;
 	background: #1a1a25;
@@ -55,8 +56,7 @@
 		position: absolute;
 		background-color: #f9f9f9;
 		width: auto;
-		height: 50%;
-		margin: 0 auto;
+		height: 70%;
 		overflow: auto;
 		// left: 0;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -92,194 +92,201 @@
 				text-align: left;
 			}
 		}
-	}
 
-	// Фон внутри Каталога при наведении курсора
-	.column a:hover {
-		background-color: #dddddd;
-	}
-
-	/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 600px) {
-		.column {
-			width: 100%;
-			height: auto;
+		// Фон внутри Каталога при наведении курсора
+		.column a:hover {
+			background-color: #dddddd;
 		}
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		// Поле ввода для поиска
+		.search_nav {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-left: 2.52vw;
+			padding-right: 30px;
+			height: 40px;
+			border-right: 1px solid rgba(133, 143, 164, 0.15);
+		}
+		.searchBox {
+		position: absolute;
+		transform: translate(-50%, 50%);
+		background: #1a1a25;
+		border-radius: 10px;
+		// padding: 10px;
 	}
-
-	// Поле ввода для поиска
-	// .search{
-	// 	position: relative;
-	// }
-	// .searchBox {
-	// 	position: absolute;
-	// 	transform: translate(-50%, 50%);
-	// 	background: #1a1a25;
-	// 	border-radius: 10px;
-	// 	padding: 10px;
-	// }
-	// .searchBox:hover>.searchInput {
-	// 	width: 240px;
-	// 	padding: 0 6px;
-	// 	background: #2f3640;
-	// 	border-radius: 10px 0 0 10px;
-	// }
-	// .searchBox:hover>.searchButton {
-	// 	background: #2f3640;
-	// 	border-radius: 0 10px 10px 0;
-	// 	color: #2f3640;
-	// }
-	// .searchButton {
-	// 	color: white;
-	// 	width: 40px;
-	// 	height: 40px;
-	// 	border-radius: 50%;
-	// 	background: #1a1a25;
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	align-items: center;
-	// 	transition: 0.4s;
-	// 	cursor: pointer;
-	// }
-	// .searchInput {
-	// 	border: none;
-	// 	background: none;
-	// 	// outline: none;
-	// 	float: left;
-	// 	padding: 0;
-	// 	color: white;
-	// 	font-size: 16px;
-	// 	transition: 0.4s;
-	// 	line-height: 40px;
-	// 	width: 0px;
-	// }
-	// @media screen and (max-width: 620px) {
-	// 	.searchBox:hover>.searchInput {
-	// 		width: 150px;
-	// 		padding: 0 6px;
-	// 	}
-	// }
-
-	// -------------------//////////
-	.nav_menu {
+}
+	.searchBox:hover > .searchInput {
+		width: 240px;
+		padding: 0 6px;
+		background: #2f3640;
+		border-radius: 10px 0 0 10px;
+	}
+	.searchBox:hover > .searchButton {
+		background: #2f3640;
+		border-radius: 0 10px 10px 0;
+		color: #2f3640;
+	}
+	.searchButton {
+		color: white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #1a1a25;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 8px;
+		transition: 0.4s;
+		cursor: pointer;
 	}
-	.nav_menu > li {
-		display: inline-flex;
-		// outline: 1px solid brown; обводка для элементов li
+	.searchInput {
+		border: none;
+		background: none;
+		outline: none;
+		float: left;
+		padding: 0;
+		color: white;
+		font-size: 16px;
+		transition: 0.4s;
+		line-height: 40px;
+		width: 0px;
 	}
-	.nav_menu > li + li {
-		margin-left: 20px;
-	}
-	// Линия проходящая под вкладками списка меню
-	.nav_menu > li > a {
-		padding: 0 0 15px 0;
-		position: relative;
-		// text-transform: uppercase;
-		color: #fff;
-		font-size: 14px;
-		line-height: 140%;
-		text-align: center;
-	}
-	.nav_menu > li > a:hover {
-		text-decoration: none;
-		color: #f53b49;
-	}
-	.nav_menu > li > a:after {
-		width: 0;
-		height: 3px;
-		background-color: #f53b49;
-		content: "";
-		left: 0;
-		bottom: 10px;
-		position: absolute;
-		transition: all 0.3s;
-	}
-	.nav_menu > li > a:hover::after {
-		width: 100%;
-	}
-	// .nav_menu > li.active a:after {
-	// 	width: 100%;
-	// }
-	.nav_menu li {
-		margin: 0;
-		white-space: nowrap;
-	}
-	.nav_menu li.menu-children {
-		position: relative;
-		margin-right: 12px;
-	}
-	// Указатель раскрывающегося меню
-	.nav_menu li.menu-children:after {
-		position: absolute;
-		content: "\2039";
-		color: #f53b49;
-		font-size: 20px;
-		font-weight: bold;
-		right: -12px;
-		top: -2px;
-		transform: rotate(-90deg);
-	}
-	.nav_menu li li.menu-children:after {
-		position: absolute;
-		content: "\2039";
-		color: #fff;
-		font-size: 14px;
-		font-weight: bold;
-		right: 10px;
-		top: 12px;
-		transform: rotate(180deg);
-	}
-	.nav_menu li.menu-children:hover > ul {
-		opacity: 1;
-		visibility: visible;
-		transform: translateY(0);
-	}
-	.nav_menu ul {
-		padding: 10px 0;
-		margin: 0;
-		list-style: none;
-		background-color: #f53b49;
-		position: absolute;
-		z-index: 1;
-		min-width: 220px;
-		top: 100%;
-		left: -30px;
-		opacity: 0;
-		visibility: hidden;
-		transform: translateY(5px);
-		transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
-	}
-	.nav_menu ul li {
-		display: block;
-		padding: 0 10px;
-		line-height: 1.1;
-	}
-	.nav_menu ul li:last-child {
-		margin-bottom: 0;
-	}
-	// Раскрывающееся многоуровневое меню
-	.nav_menu ul li a {
-		display: block;
-		color: #fff;
-		padding: 7px;
-		transition: all 0.3s;
-		text-decoration: none;
-	}
-	.nav_menu ul li a:hover {
-		color: #f53b49;
-		background: #fff;
-		text-decoration: none;
-	}
-	.nav_menu ul ul {
-		top: 0;
-		left: 100%;
+	@media screen and (max-width: 620px) {
+		.searchBox:hover > .searchInput {
+			width: 150px;
+			padding: 0 6px;
+		}
 	}
 }
+// <!-- Навигационное Меню с вкладками -->
+.nav_menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	margin-left: auto;
+}
+.nav_menu > li {
+	display: inline-flex;
+	// outline: 1px solid brown; обводка для элементов li
+}
+.nav_menu > li + li {
+	margin-left: 20px;
+}
+// Линия проходящая под вкладками списка меню
+.nav_menu > li > a {
+	padding: 0 0 15px 0;
+	position: relative;
+	// text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	line-height: 140%;
+	text-align: center;
+}
+.nav_menu > li > a:hover {
+	text-decoration: none;
+	color: #f53b49;
+}
+.nav_menu > li > a:after {
+	width: 0;
+	height: 3px;
+	background-color: #f53b49;
+	content: "";
+	left: 0;
+	bottom: 10px;
+	position: absolute;
+	transition: all 0.3s;
+}
+.nav_menu > li > a:hover::after {
+	width: 100%;
+}
+// .nav_menu > li.active a:after {
+// 	width: 100%;
+// }
+.nav_menu li {
+	margin: 0;
+	white-space: nowrap;
+}
+.nav_menu li.menu-children {
+	position: relative;
+	margin-right: 12px;
+}
+// Указатель раскрывающегося меню
+.nav_menu li.menu-children:after {
+	position: absolute;
+	content: "\2039";
+	color: #f53b49;
+	font-size: 20px;
+	font-weight: bold;
+	right: -12px;
+	top: -2px;
+	transform: rotate(-90deg);
+}
+.nav_menu li li.menu-children:after {
+	position: absolute;
+	content: "\2039";
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	right: 10px;
+	top: 12px;
+	transform: rotate(180deg);
+}
+.nav_menu li.menu-children:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.nav_menu ul {
+	padding: 10px 0;
+	margin: 0;
+	list-style: none;
+	background-color: #f53b49;
+	position: absolute;
+	z-index: 1;
+	min-width: 220px;
+	top: 100%;
+	left: -30px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(5px);
+	transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
+}
+.nav_menu ul li {
+	display: block;
+	padding: 0 10px;
+	line-height: 1.1;
+}
+.nav_menu ul li:last-child {
+	margin-bottom: 0;
+}
+// Раскрывающееся многоуровневое меню
+.nav_menu ul li a {
+	display: block;
+	color: #fff;
+	padding: 7px;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+.nav_menu ul li a:hover {
+	color: #f53b49;
+	background: #fff;
+	text-decoration: none;
+}
+.nav_menu ul ul {
+	top: 0;
+	left: 100%;
+}
 
+// <!-- Nav меню с корзиной и др. -->
 .frame_nav {
 	position: relative;
 	display: flex;
@@ -312,7 +319,7 @@
 		position: absolute;
 		background-image: url("../img/Group 15.png");
 		left: 51.5%;
-		right: 34.5%;
+		right: 37.5%;
 		top: -11.71%;
 		bottom: 39.86%;
 		a {
@@ -328,8 +335,8 @@
 		content: "";
 		background-image: url("../img/Group .png");
 		position: absolute;
-		left: 84.9%;
-		right: 3.07%;
+		left: 83.9%;
+		right: 4.07%;
 		top: -12.71%;
 		bottom: 42.86%;
 		a {
