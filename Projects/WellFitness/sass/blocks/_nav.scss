@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 16px 0px;
-	gap: 100px;
+	gap: 20px;
 	width: 1410px;
 	height: 81px;
 	background: #1a1a25;
@@ -60,7 +60,7 @@
 		overflow: auto;
 		// left: 0;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-		z-index: 1;
+		// z-index: 1;
 	}
 	// Фон верхней части открытого каталога
 	.dropdown-content .header {
@@ -107,23 +107,25 @@
 
 		// Поле ввода для поиска
 		.search_nav {
-			position: relative;
+			// position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding-left: 2.52vw;
-			padding-right: 30px;
-			height: 40px;
+			// padding-left: 2.52vw;
+			// padding-right: 30px;
+			// height: 40px;
 			border-right: 1px solid rgba(133, 143, 164, 0.15);
 		}
 		.searchBox {
-		position: absolute;
-		transform: translate(-50%, 50%);
-		background: #1a1a25;
-		border-radius: 10px;
-		// padding: 10px;
+			position: absolute;
+			transform: translate(-50%, 50%);
+			background: #1a1a25;
+			border-radius: 10px;
+			right: 50px;
+			top: 20px;
+			// padding: 10px;
+		}
 	}
-}
 	.searchBox:hover > .searchInput {
 		width: 240px;
 		padding: 0 6px;
@@ -139,7 +141,7 @@
 		color: white;
 		width: 40px;
 		height: 40px;
-		border-radius: 50%;
+		border-radius: 30%;
 		background: #1a1a25;
 		display: flex;
 		justify-content: center;
@@ -173,6 +175,7 @@
 	align-items: center;
 	gap: 8px;
 	margin-left: auto;
+	margin-right: auto;
 }
 .nav_menu > li {
 	display: inline-flex;

@@ -177,7 +177,7 @@ header .conteiner_header .btn a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 0px;
-  gap: 100px;
+  gap: 20px;
   width: 1410px;
   height: 81px;
   background: #1a1a25;
@@ -235,7 +235,6 @@ header .conteiner_header .btn a {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 .conteiner_nav .dropdown-content .header {
   background: #f53b49;
@@ -288,7 +287,6 @@ header .conteiner_header .btn a {
   }
 }
 .conteiner_nav .row .search_nav {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,9 +296,6 @@ header .conteiner_header .btn a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 2.52vw;
-  padding-right: 30px;
-  height: 40px;
   border-right: 1px solid rgba(133, 143, 164, 0.15);
 }
 .conteiner_nav .row .searchBox {
@@ -309,6 +304,8 @@ header .conteiner_header .btn a {
           transform: translate(-50%, 50%);
   background: #1a1a25;
   border-radius: 10px;
+  right: 50px;
+  top: 20px;
 }
 .conteiner_nav .searchBox:hover > .searchInput {
   width: 240px;
@@ -325,7 +322,7 @@ header .conteiner_header .btn a {
   color: white;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 30%;
   background: #1a1a25;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +369,7 @@ header .conteiner_header .btn a {
           align-items: center;
   gap: 8px;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .nav_menu > li {
