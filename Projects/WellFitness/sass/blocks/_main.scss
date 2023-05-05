@@ -1,0 +1,170 @@
+// main
+.banner_list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 36px;
+	ul {
+		position: relative;
+		width: 1800px;
+		height: 500px;
+		border-radius: 10px;
+		background-image: url("../sass/img/main_banner_list/banner_1.png");
+		li:nth-child(1) {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 512.8px;
+			height: 336px;
+			left: 203px;
+			top: 83px;
+			h6 {
+				width: 512.8px;
+				height: 26px;
+				font-family: "Inter", sans-serif;
+				font-weight: 900;
+				font-size: 24px;
+				line-height: 110%;
+				text-transform: uppercase;
+				color: #f53b49;
+				margin-bottom: 12px;
+			}
+			h4 {
+				width: 512.8px;
+				height: 220px;
+				font-family: "Inter", sans-serif;
+				font-weight: 900;
+				font-size: 49.5455px;
+				line-height: 110%;
+				text-transform: uppercase;
+				color: #1a1a25;
+				margin-bottom: 24px;
+				span {
+					font-weight: 400;
+				}
+			}
+			.btn_banner {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				padding: 12px 20px 13px;
+				gap: 10px;
+				width: 155px;
+				height: 42px;
+				border: 1px solid #f53b49;
+				border-radius: 4px;
+				font-family: "Inter", sans-serif;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 17px;
+				color: #f53b49;
+			}
+		}
+		li:nth-child(2) {
+			.btn_scroll {
+				position: absolute;
+				background-image: url("../sass/img/main_banner_list/стрелки.png");
+				width: 160px;
+				height: 100px;
+				left: 1495px;
+				top: 400px;
+			}
+		}
+	}
+}
+
+// <!-- for_home -->
+.for_home {
+	width: 1410px;
+	height: 875px;
+	margin: 0 auto;
+	gap: 30px;
+	h2 {
+		margin-top: 120px;
+		margin-bottom: 30px;
+	}
+	.category_1 {
+
+		display: grid;
+		/* Будет создано 4 колонки по 330px */
+		grid-template-columns: repeat(4, 330px);
+		/* Будет создано 2 ряда высотой 200px */
+		grid-template-rows: repeat(2, 200px);
+		gap: 30px;
+		background-color: #ddd;
+		border: 1px solid red;
+		.item_1 {
+			position: relative;
+			grid-row: 1/3;
+			h3 {
+				position: absolute;
+				display: grid;
+				align-items: flex-start;
+				color: #ffffff;
+				left: 30px;
+				top: 36.43px;
+			}
+		}
+		.item_2 {
+			position: relative;
+			grid-row: 1/3;
+			h3 {
+				position: absolute;
+				display: grid;
+				align-items: flex-start;
+				left: 30px;
+				top: 36.43px;
+			}
+		}
+	}
+}
+// li:last-child::after {
+// 	content: "";
+// 	background-image: url("../sass/img/frame_nav_svg/Group .png");
+// 	position: absolute;
+// 	left: 83.9%;
+// 	right: 4.07%;
+// 	top: -13.71%;
+// 	bottom: 42.86%;
+// 	a {
+// 		position: absolute;
+// 		left: 4.88%;
+// 		right: 43.9%;
+// 		top: 5.36%;
+// 		bottom: 7.14%;
+// 		opacity: 0.7;
+// 	}
+// }
+
+// [class^="grid-item"] {
+// 	outline: 1px #f90 dashed;
+// 	display: grid;
+// 	background-color: goldenrod;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+
+// 	.grid-item3 {
+// 		grid-column: 2/-1;
+// 	}
+
+// 	.grid-item6 {
+// 		grid-row: 3/6;
+// 		grid-column: 3 / 5;
+// 	}
+
+// 	.grid-item17 {
+// 		grid-row: 6 / span 2;
+// 		grid-column: 2/3;
+// 	}
+
+// 	.grid-item4 {
+// 		grid-row: 4 / 7;
+// 	}
+
+// 	// <!-- for_fitness_clubs -->
+// 	.for_fitness_clubs {
+// 	}
+// }

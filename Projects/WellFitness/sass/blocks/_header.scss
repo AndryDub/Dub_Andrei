@@ -1,11 +1,11 @@
 header {
 	width: 1920px;
-	height: 203px;
+	height: auto;
 	top: calc(50% - 203px / 2 - 3924px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: #1a1a25;
+	background-image: url('../sass/img/Header.png');
 	.conteiner_header {
 		display: flex;
 		flex-direction: row;
@@ -14,6 +14,7 @@ header {
 		padding: 24px 0px 20px;
 		width: 1410px;
 		height: 82px;
+		background: #1a1a25;
 		img {
 			width: 280px;
 			height: 28.9px;
@@ -108,5 +109,3 @@ header {
 		}
 	}
 }
-
-@import "./blocks/nav";
