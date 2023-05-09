@@ -105,7 +105,7 @@ h3 {
 	font-size: 14px;
 	line-height: 17px;
 	color: #f53b49;
-	/*стили для эффекта btn*/
+	/*стили для эффекта btnм*/
 	border: 0 solid;
 	box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
 	outline: 1px solid;
@@ -122,61 +122,13 @@ h3 {
 	text-shadow: 1px 1px 2px #99bfd1;
 }
 
-// верхняя часть изображений с иконками в  .stock .product_card
-// @mixin product_card_icons () {
-// 	li {
-// 		display: flex;
-// 		flex-direction: row;
-// 		&:nth-child(1) {
-// 			position: absolute;
-// 			left: 10px;
-// 			top: 10px;
-// 			width: 36px;
-// 			height: 36px;
-// 		}
-// 		&:nth-child(2) {
-// 			position: absolute;
-// 			left: 36px;
-// 			top: 10px;
-// 			width: 36px;
-// 			height: 36px;
-// 			transition: all 0.5s ease-in-out 0.2s;
-// 		}
-// 		&:nth-child(3) {
-// 			position: absolute;
-// 			left: 62px;
-// 			top: 10px;
-// 			width: 36px;
-// 			height: 36px;
-// 			transition: all 0.5s ease-in-out 0.2s;
-// 		}
-// 		&:nth-child(4) {
-// 			position: absolute;
-// 			right: 43px;
-// 			top: 20px;
-// 			width: 17px;
-// 			height: 17px;
-// 		}
-// 		&:nth-child(5) {
-// 			position: absolute;
-// 			right: 14.61px;
-// 			top: 20px;
-// 			width: 17px;
-// 			height: 17px;
-// 		}
-// 	}
-// 	&:hover {
-// 		li:nth-child(2) {
-// 			position: absolute;
-// 			left: 56px;
-// 			top: 10px;
-// 			transition: 0.5s;
-// 		}
-// 		li:nth-child(3) {
-// 			position: absolute;
-// 			left: 102px;
-// 			top: 10px;
-// 			transition: 0.5s;
-// 		}
-// 	}
-// }
+.menu_popular_brands {
+	p {
+		font-family: "Inter", sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 130%;
+		color: #384255;
+	}
+}
+

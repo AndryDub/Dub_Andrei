@@ -112,7 +112,7 @@ h3 {
   font-size: 14px;
   line-height: 17px;
   color: #f53b49;
-  /*стили для эффекта btn*/
+  /*стили для эффекта btnм*/
   border: 0 solid;
   -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
           box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
@@ -131,6 +131,14 @@ h3 {
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #99bfd1;
+}
+
+.menu_popular_brands p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #384255;
 }
 
 * {
@@ -940,13 +948,19 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #99bfd1;
 }
-.banner_list li:nth-child(2) .btn_scroll_banner {
+.banner_list .btn_scroll_banner_left {
   position: absolute;
-  background-image: url("../sass/img/main/main_banner_list/стрелки.png");
-  width: 160px;
-  height: 100px;
-  left: 1495px;
-  top: 400px;
+  width: 50px;
+  height: 50px;
+  right: 255px;
+  bottom: 50px;
+}
+.banner_list .btn_scroll_banner_right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 195px;
+  bottom: 50px;
 }
 
 .for_home {
@@ -1170,6 +1184,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   height: 24px;
 }
 .promotion .container_promotional_product_cards ol {
+  position: relative;
   display: grid;
   -webkit-column-gap: 30px;
           column-gap: 30px;
@@ -1476,24 +1491,13 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 }
 .promotion .container_promotional_product_cards .btn_scroll_product_card {
   position: absolute;
-  background-image: url("../sass/img/main/main_promotion/icon/arrow_right.png");
   width: 50px;
   height: 50px;
-  top: 240px;
-  right: 539px;
+  top: 200px;
+  right: 645px;
 }
 
 .ideas_and_selections {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 1920px;
   height: 756px;
   background-image: url("../sass/img/main/main_ideas_and_selections/black_background.png");
@@ -1583,7 +1587,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   position: absolute;
   width: 330px;
   height: 400px;
-  left: 200px;
+  left: 720px;
 }
 .ideas_and_selections .conteiner_ideas_selections .cardio_strength_training h2 {
   position: absolute;
@@ -1607,8 +1611,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   position: absolute;
   width: 330px;
   height: 400px;
-  top: 0;
-  left: 400px;
+  left: 1080px;
 }
 .ideas_and_selections .conteiner_ideas_selections .treadmill h2 {
   position: absolute;
@@ -1651,6 +1654,161 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+}
+
+.popular_brands {
+  padding: 120px 0px 0px;
+  gap: 30px;
+  width: 1920px;
+  height: 807px;
+}
+.popular_brands .container_popular_brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  width: 1410px;
+  height: 666px;
+  margin: 0 auto;
+}
+.popular_brands .container_popular_brands .menu_popular_brands ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+  width: 1410px;
+  height: 21px;
+}
+.popular_brands .container_popular_brands .category_popular_brands ul {
+  display: grid;
+  grid-template-columns: repeat(5, 282px);
+  grid-template-rows: repeat(3, 160px);
+  position: relative;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+}
+.popular_brands .container_popular_brands .category_popular_brands ul li {
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 282px;
+  height: 160px;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+}
+
+.btn_all_brands {
+  padding: 12px 20px 13px;
+  gap: 10px;
+  width: 125px;
+  height: 42px;
+  border: 1px solid #f53b49;
+  border-radius: 4px;
+  /* txt / button */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f53b49;
+  /*стили для эффекта btn*/
+  border: 0 solid;
+  -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
+          box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
+  outline: 1px solid;
+  outline-color: rgba(245, 59, 75, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn_all_brands:hover {
+  border: 1px solid #f53b49;
+  -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+          box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #99bfd1;
+}
+
+.customer_assistance {
+  padding: 125px 0px 40px;
+  width: 1408px;
+  height: 470px;
+  margin: 0 auto;
+}
+.customer_assistance .menu_customer_assistance {
+  display: grid;
+  grid-template-columns: repeat(4, 352px);
+  grid-template-rows: repeat(1, 305px);
+  background: #ffffff;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+  border-radius: 6px 0px 0px 6px;
+}
+.customer_assistance .menu_customer_assistance ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 30px 46.5px 40px;
+}
+.customer_assistance .menu_customer_assistance ul li {
+  position: relative;
+}
+.customer_assistance .menu_customer_assistance ul li h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.customer_assistance .menu_customer_assistance ul li p {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #384255;
+  margin-bottom: 20px;
+}
+.customer_assistance .menu_customer_assistance ul li a {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f53b49;
+}
+.customer_assistance .menu_customer_assistance ul li a::after {
+  content: "";
+  background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
+  position: absolute;
+  padding: 4px 0px 0px;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  top: 1.5px;
+}
+.customer_assistance .menu_customer_assistance ul li .help {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 140px;
+  top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

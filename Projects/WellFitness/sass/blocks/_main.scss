@@ -81,15 +81,21 @@
 		}
 	}
 	// !!! btn_scroll - кнопки перелистывания изображений (слайдов)
-	li:nth-child(2) {
-		.btn_scroll_banner {
-			position: absolute;
-			background-image: url("../sass/img/main/main_banner_list/стрелки.png");
-			width: 160px;
-			height: 100px;
-			left: 1495px;
-			top: 400px;
-		}
+	.btn_scroll_banner_left {
+		position: absolute;
+		// background-image: url("../sass/img/main/main_banner_list/стрелки.png");
+		width: 50px;
+		height: 50px;
+		right: 255px;
+		bottom: 50px;
+	}
+	.btn_scroll_banner_right {
+		position: absolute;
+		// background-image: url("../sass/img/main/main_banner_list/стрелки.png");
+		width: 50px;
+		height: 50px;
+		right: 195px;
+		bottom: 50px;
 	}
 }
 
@@ -332,6 +338,7 @@
 	.container_promotional_product_cards {
 		// border: 1px solid blue;
 		ol {
+			position: relative;
 			// border: 1px solid rgb(227, 5, 216);
 			display: grid;
 			column-gap: 30px;
@@ -641,20 +648,17 @@
 		// для перелистывания изображений - КАРУСЕЛЬ
 		.btn_scroll_product_card {
 			position: absolute;
-			background-image: url("../sass/img/main/main_promotion/icon/arrow_right.png");
+			// background-image: url("../sass/img/main/main_promotion/icon/arrow_right.png");
 			width: 50px;
 			height: 50px;
-			top: 240px;
-			right: 539px;
-			// z-index: 1;
+			top: 200px;
+			right: 645px;
 		}
 	}
 }
 
+// !!! ideas_and_selections - Идеи и подборки
 .ideas_and_selections {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	width: 1920px;
 	height: 756px;
 	background-image: url("../sass/img/main/main_ideas_and_selections/black_background.png");
@@ -734,7 +738,8 @@
 			width: 330px;
 			height: 400px;
 			// top: 0;
-			left: 200px;
+			// !!! проблемма
+			left: 720px;
 			// background: url("../sass/img/main/main_ideas_and_selections/баннер 2.png");
 			// padding: 30px;
 
@@ -763,11 +768,11 @@
 			position: absolute;
 			width: 330px;
 			height: 400px;
-			top: 0;
-			left: 400px;
+			// top: 0;
+			// !!! проблемма
+			left: 1080px;
 			// background-image: url("../sass/img/main/main_ideas_and_selections/баннер 3.png");
 			// padding: 30px;
-
 			h2 {
 				position: absolute;
 				width: 200px;
@@ -812,38 +817,176 @@
 			line-height: 17px;
 			color: #ffffff;
 
-
-		// 	.btn_full_selection {
-		// 		--borderWidth: 3px;
-		// 		background: #1D1F20;
-		// 		position: relative;
-		// 		border-radius: var(--borderWidth);
-					// }
-		// 		.btn_full_selection:after {
-		// 		content: '';
-		// 		position: absolute;
-		// 		top: calc(-1 * var(--borderWidth));
-		// 		left: calc(-1 * var(--borderWidth));
-		// 		height: calc(100% + var(--borderWidth) * 2);
-		// 		width: calc(100% + var(--borderWidth) * 2);
-		// 		background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-		// 		border-radius: calc(2 * var(--borderWidth));
-		// 		z-index: -1;
-		// 		animation: animatedgradient 3s ease alternate infinite;
-		// 		background-size: 300% 300%;
-		// 	 }
-		// 	 @keyframes animatedgradient {
-		// 		0% {
-		// 			background-position: 0% 50%;
-		// 		}
-		// 		50% {
-		// 			background-position: 100% 50%;
-		// 		}
-		// 		100% {
-		// 			background-position: 0% 50%;
-		// 		}
-		// 	}
-		// }
+			// 	.btn_full_selection {
+			// 		--borderWidth: 3px;
+			// 		background: #1D1F20;
+			// 		position: relative;
+			// 		border-radius: var(--borderWidth);
+			// }
+			// 		.btn_full_selection:after {
+			// 		content: '';
+			// 		position: absolute;
+			// 		top: calc(-1 * var(--borderWidth));
+			// 		left: calc(-1 * var(--borderWidth));
+			// 		height: calc(100% + var(--borderWidth) * 2);
+			// 		width: calc(100% + var(--borderWidth) * 2);
+			// 		background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+			// 		border-radius: calc(2 * var(--borderWidth));
+			// 		z-index: -1;
+			// 		animation: animatedgradient 3s ease alternate infinite;
+			// 		background-size: 300% 300%;
+			// 	 }
+			// 	 @keyframes animatedgradient {
+			// 		0% {
+			// 			background-position: 0% 50%;
+			// 		}
+			// 		50% {
+			// 			background-position: 100% 50%;
+			// 		}
+			// 		100% {
+			// 			background-position: 0% 50%;
+			// 		}
+			// 	}
+			// }
+		}
 	}
 }
+
+// !!! popular_brands - популярные бренды
+.popular_brands {
+	padding: 120px 0px 0px;
+	gap: 30px;
+	width: 1920px;
+	height: 807px;
+	.container_popular_brands {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 30px;
+		width: 1410px;
+		height: 666px;
+		margin: 0 auto;
+		.menu_popular_brands ul {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 16px;
+			width: 1410px;
+			height: 21px;
+		}
+		.category_popular_brands {
+			ul {
+				display: grid;
+				grid-template-columns: repeat(5, 282px);
+				grid-template-rows: repeat(3, 160px);
+				// justify-items: center;
+				// align-items: center;
+				position: relative;
+				border: 1px solid rgba(133, 143, 164, 0.2);
+				li {
+					display: grid;
+					justify-items: center;
+					align-items: center;
+					width: 282px;
+					height: 160px;
+					border: 1px solid rgba(133, 143, 164, 0.2);
+				}
+			}
+		}
+	}
+}
+.btn_all_brands {
+	padding: 12px 20px 13px;
+	gap: 10px;
+	width: 125px;
+	height: 42px;
+	border: 1px solid #f53b49;
+	border-radius: 4px;
+	/* txt / button */
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f53b49;
+	/*стили для эффекта btn*/
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
+	outline: 1px solid;
+	outline-color: rgba(245, 59, 75, 0.5);
+	outline-offset: 0px;
+	text-shadow: none;
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn_all_brands:hover {
+	border: 1px solid #f53b49;
+	box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #99bfd1;
+}
+
+// !!! customer assistance - помощь клиенту
+.customer_assistance {
+	padding: 125px 0px 40px;
+	width: 1408px;
+	height: 470px;
+	margin: 0 auto;
+	.menu_customer_assistance {
+		display: grid;
+		grid-template-columns: repeat(4, 352px);
+		grid-template-rows: repeat(1, 305px);
+		background: #ffffff;
+		border: 1px solid rgba(133, 143, 164, 0.2);
+		border-radius: 6px 0px 0px 6px;
+		ul {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			// justify-content: center;
+			// align-items: center;
+			text-align: center;
+			padding: 30px 46.5px 40px;
+			li {
+				position: relative;
+				h3 {
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 150%;
+					text-align: center;
+					color: #384255;
+					margin-bottom: 20px;
+				}
+				a {
+					position: relative;
+					font-family: "Inter", sans-serif;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 17px;
+					color: #f53b49;
+					&::after {
+						content: "";
+						background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
+						position: absolute;
+						padding: 4px 0px 0px;
+						width: 10px;
+						height: 10px;
+						margin-left: 8px;
+						top: 1.5px;
+					}
+				}
+				.help {
+					position: absolute;
+					// background-image: url("../sass/img/main/main_customer_assistance/помощь.png");
+					width: 72px;
+					height: 72px;
+					left:  140px;
+					top: 30px;
+
+				}
+			}
+		}
+	}
 }
