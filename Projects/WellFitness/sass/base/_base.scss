@@ -73,7 +73,7 @@ h3 {
 	font-size: 14px;
 	line-height: 17px;
 	color: #f53b49;
-/*стили для эффекта btn*/ 
+	/*стили для эффекта btn*/
 	border: 0 solid;
 	box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
 	outline: 1px solid;
@@ -83,14 +83,46 @@ h3 {
 	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .btn_all_category:hover {
-	border: 1px solid #f53b49;;
+	border: 1px solid #f53b49;
 	box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
 	outline-color: rgba(255, 255, 255, 0);
 	outline-offset: 15px;
 	text-shadow: 1px 1px 2px #99bfd1;
 }
 
-// верхняя часть изображений с иконками в  .stock .product_card 
+// btn_all_stock_items - Все товары по акции для блока - "product_card"
+.btn_all_stock_items {
+	position: absolute;
+	margin-top: 30px;
+	padding: 12px 20px 13px;
+	width: 200px;
+	height: 42px;
+	border: 1px solid #f53b49;
+	border-radius: 4px;
+	/* txt / button */
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f53b49;
+	/*стили для эффекта btn*/
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
+	outline: 1px solid;
+	outline-color: rgba(245, 59, 75, 0.5);
+	outline-offset: 0px;
+	text-shadow: none;
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn_all_stock_items:hover {
+	border: 1px solid #f53b49;
+	box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #99bfd1;
+}
+
+// верхняя часть изображений с иконками в  .stock .product_card
 // @mixin product_card_icons () {
 // 	li {
 // 		display: flex;
