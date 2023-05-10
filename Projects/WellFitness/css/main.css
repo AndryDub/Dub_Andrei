@@ -1748,18 +1748,18 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 .customer_assistance {
   padding: 125px 0px 40px;
   width: 1408px;
-  height: 470px;
+  height: 500px;
   margin: 0 auto;
 }
-.customer_assistance .menu_customer_assistance {
+.customer_assistance ul {
   display: grid;
   grid-template-columns: repeat(4, 352px);
-  grid-template-rows: repeat(1, 305px);
+  grid-template-rows: repeat(1, 335px);
   background: #ffffff;
   border: 1px solid rgba(133, 143, 164, 0.2);
   border-radius: 6px 0px 0px 6px;
 }
-.customer_assistance .menu_customer_assistance ul {
+.customer_assistance ul li {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1769,23 +1769,28 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 30px 46.5px 40px;
+  padding: 122px 46.5px 40px;
+  border: 1px solid rgba(133, 143, 164, 0.2);
 }
-.customer_assistance .menu_customer_assistance ul li {
-  position: relative;
+.customer_assistance ul li img {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 140px;
+  top: 30px;
 }
-.customer_assistance .menu_customer_assistance ul li h3 {
+.customer_assistance ul li h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.customer_assistance .menu_customer_assistance ul li p {
+.customer_assistance ul li p {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #384255;
   margin-bottom: 20px;
 }
-.customer_assistance .menu_customer_assistance ul li a {
+.customer_assistance ul li a {
   position: relative;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -1793,7 +1798,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 17px;
   color: #f53b49;
 }
-.customer_assistance .menu_customer_assistance ul li a::after {
+.customer_assistance ul li a::after {
   content: "";
   background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
   position: absolute;
@@ -1803,12 +1808,378 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   margin-left: 8px;
   top: 1.5px;
 }
-.customer_assistance .menu_customer_assistance ul li .help {
+.customer_assistance ul li a a:hover::after {
+  content: "";
+  color: white;
+}
+n_buy {
+  gap: 6px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 20px 13px;
+  width: 121px;
+  height: 49px;
+  border: 1px solid #e83f3f;
+  background: #f53b4a;
+  border-radius: 4px;
+  /* txt / button */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  /*стили для эффекта btn*/
+  border: 0 solid;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(245, 59, 74, 0.6);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.promotion .container_promotional_product_cards ol .product_card .card_description .basket_buy .btn_buy:hover {
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+.promotion .container_promotional_product_cards .btn_scroll_product_card {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 200px;
+  right: 645px;
+}
+
+.ideas_and_selections {
+  width: 1920px;
+  height: 756px;
+  background-image: url("../sass/img/main/main_ideas_and_selections/black_background.png");
+}
+.ideas_and_selections .conteiner_ideas_selections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 120px 0px 100px;
+  gap: 30px;
+  margin: 0 auto;
+  background: #1a1a25;
+  width: 1410px;
+  height: 755px;
+}
+.ideas_and_selections .conteiner_ideas_selections h2 {
+  color: #ffffff;
+}
+.ideas_and_selections .conteiner_ideas_selections ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  width: 1410px;
+  height: 400px;
+  position: relative;
+}
+.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers {
+  position: relative;
+  width: 690px;
+  height: 400px;
+}
+.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers h2 {
+  position: absolute;
+  color: #ffffff;
+  gap: 20px;
+  width: 309px;
+  height: 102px;
+  left: 30px;
+  top: 30px;
+}
+.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers h2 span {
+  text-transform: uppercase;
+}
+.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers .clock {
+  position: absolute;
+  width: 98px;
+  height: 106px;
+  left: 23px;
+  top: 147px;
+}
+.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers p {
+  position: absolute;
+  width: 138px;
+  height: 69px;
+  left: 121px;
+  top: 168px;
+  font-size: 20px;
+  line-height: 114.94%;
+  color: #1a1a25;
+}
+.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers .bowflex {
+  position: absolute;
+  width: 165px;
+  height: 63px;
+  left: 30px;
+  top: 297px;
+}
+.ideas_and_selections .conteiner_ideas_selections .cardio_strength_training {
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  left: 720px;
+}
+.ideas_and_selections .conteiner_ideas_selections .cardio_strength_training h2 {
+  position: absolute;
+  width: 207px;
+  height: 88px;
+  left: 30px;
+  top: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #1a1a25;
+}
+.ideas_and_selections .conteiner_ideas_selections .cardio_strength_training h2 span {
+  font-size: 36px;
+  line-height: 110%;
+  color: #f53b49;
+}
+.ideas_and_selections .conteiner_ideas_selections .treadmill {
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  left: 1080px;
+}
+.ideas_and_selections .conteiner_ideas_selections .treadmill h2 {
+  position: absolute;
+  width: 200px;
+  height: 93px;
+  left: 29px;
+  top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #f53b49;
+}
+.ideas_and_selections .conteiner_ideas_selections .treadmill h2 span {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1a1a25;
+  text-transform: none;
+}
+.ideas_and_selections .conteiner_ideas_selections .treadmill .nautilus {
+  position: absolute;
+  width: 95px;
+  height: 57px;
+  left: 29px;
+  top: 131px;
+}
+.ideas_and_selections .conteiner_ideas_selections .btn_full_selection {
+  padding: 12px 20px 13px;
+  gap: 10px;
+  width: 165px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  /* txt / button */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.popular_brands {
+  padding: 120px 0px 0px;
+  gap: 30px;
+  width: 1920px;
+  height: 807px;
+}
+.popular_brands .container_popular_brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  width: 1410px;
+  height: 666px;
+  margin: 0 auto;
+}
+.popular_brands .container_popular_brands .menu_popular_brands ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+  width: 1410px;
+  height: 21px;
+}
+.popular_brands .container_popular_brands .category_popular_brands ul {
+  display: grid;
+  grid-template-columns: repeat(5, 282px);
+  grid-template-rows: repeat(3, 160px);
+  position: relative;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+}
+.popular_brands .container_popular_brands .category_popular_brands ul li {
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 282px;
+  height: 160px;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+}
+
+.btn_all_brands {
+  padding: 12px 20px 13px;
+  gap: 10px;
+  width: 125px;
+  height: 42px;
+  border: 1px solid #f53b49;
+  border-radius: 4px;
+  /* txt / button */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f53b49;
+  /*стили для эффекта btn*/
+  border: 0 solid;
+  -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
+          box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
+  outline: 1px solid;
+  outline-color: rgba(245, 59, 75, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn_all_brands:hover {
+  border: 1px solid #f53b49;
+  -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+          box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #99bfd1;
+}
+
+.customer_assistance {
+  padding: 125px 0px 40px;
+  width: 1408px;
+  height: 500px;
+  margin: 0 auto;
+}
+.customer_assistance ul {
+  display: grid;
+  grid-template-columns: repeat(4, 352px);
+  grid-template-rows: repeat(1, 335px);
+  background: #ffffff;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+  border-radius: 6px 0px 0px 6px;
+}
+.customer_assistance ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 122px 46.5px 40px;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+}
+.customer_assistance ul li img {
   position: absolute;
   width: 72px;
   height: 72px;
   left: 140px;
   top: 30px;
 }
-
+.customer_assistance ul li h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.customer_assistance ul li p {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #384255;
+  margin-bottom: 20px;
+}
+.customer_assistance ul li a {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f53b49;
+}
+.customer_assistance ul li a::after {
+  content: "";
+  background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
+  position: absolute;
+  padding: 4px 0px 0px;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  top: 1.5px;
+}
+.customer_assistance ul li a a:hover::after {
+  content: "";
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
