@@ -55,7 +55,9 @@ h3 {
 
 .btn_all_category {
   margin-top: 30px;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -67,7 +69,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 20px 13px;
-  width: 146px;
+  width: 150px;
   height: 41px;
   border: 1px solid #f53b49;
   border-radius: 4px;
@@ -77,25 +79,6 @@ h3 {
   font-size: 14px;
   line-height: 17px;
   color: #f53b49;
-  /*стили для эффекта btn*/
-  border: 0 solid;
-  -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-          box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-  outline: 1px solid;
-  outline-color: rgba(245, 59, 75, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.btn_all_category:hover {
-  border: 1px solid #f53b49;
-  -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-          box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #99bfd1;
 }
 
 .btn_all_stock_items {
@@ -112,7 +95,9 @@ h3 {
   font-size: 14px;
   line-height: 17px;
   color: #f53b49;
-  /*стили для эффекта btnм*/
+}
+
+.btn_effect {
   border: 0 solid;
   -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
           box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
@@ -124,7 +109,7 @@ h3 {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btn_all_stock_items:hover {
+.btn_effect:hover {
   border: 1px solid #f53b49;
   -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
           box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
@@ -788,7 +773,7 @@ header .conteiner_header .btn a {
 }
 li .conteiner_navigation .navigation_menu .navigation_children:after {
   position: absolute;
-  content: "\2039";
+  content: "\25BE";
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -930,23 +915,6 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 17px;
   color: #f53b49;
   border: 0 solid;
-  /*стили для эффекта btn*/
-  -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-          box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-  outline: 1px solid;
-  outline-color: rgba(245, 59, 75, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-.banner_list ul li:nth-child(1) .btn_banner:hover {
-  border: 1px solid #f53b49;
-  -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-          box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #99bfd1;
 }
 .banner_list .btn_scroll_banner_left {
   position: absolute;
@@ -1724,25 +1692,6 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   font-size: 14px;
   line-height: 17px;
   color: #f53b49;
-  /*стили для эффекта btn*/
-  border: 0 solid;
-  -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-          box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-  outline: 1px solid;
-  outline-color: rgba(245, 59, 75, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.btn_all_brands:hover {
-  border: 1px solid #f53b49;
-  -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-          box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #99bfd1;
 }
 
 .customer_assistance {
@@ -1754,7 +1703,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 .customer_assistance ul {
   display: grid;
   grid-template-columns: repeat(4, 352px);
-  grid-template-rows: repeat(1, 335px);
+  grid-template-rows: repeat(1, 305px);
   background: #ffffff;
   border: 1px solid rgba(133, 143, 164, 0.2);
   border-radius: 6px 0px 0px 6px;
@@ -1769,7 +1718,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 122px 46.5px 40px;
+  padding: 102px 46.5px 25px;
   border: 1px solid rgba(133, 143, 164, 0.2);
 }
 .customer_assistance ul li img {
@@ -1781,22 +1730,29 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 }
 .customer_assistance ul li h3 {
   margin-top: 20px;
-  margin-bottom: 10px;
+  width: 259px;
+  height: 48px;
 }
 .customer_assistance ul li p {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: #384255;
+  width: 257.51px;
+  height: 72px;
   margin-bottom: 20px;
 }
 .customer_assistance ul li a {
+  width: 150px;
+  height: 17px;
   position: relative;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #f53b49;
+  margin-left: auto;
+  margin-right: auto;
 }
 .customer_assistance ul li a::after {
   content: "";
@@ -1808,13 +1764,67 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   margin-left: 8px;
   top: 1.5px;
 }
-.customer_assistance ul li a a:hover::after {
+.customer_assistance ul li a:hover {
   content: "";
+  background-color: #ff818a;
   color: white;
 }
-n_buy {
-  gap: 6px;
+
+.about_company {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1624px;
+  height: 670.87px;
+  gap: 29px;
+  margin-left: 254px;
+  margin-right: auto;
+}
+.about_company .company ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 120px 0px 0px;
+  gap: 40px;
   position: absolute;
+  width: 572px;
+  height: 655px;
+}
+.about_company .company ul h4 {
+  margin-top: 20px;
+  width: 572px;
+  height: 144px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 140%;
+  color: #384255;
+}
+.about_company .company ul p {
+  margin-top: 20px;
+  width: 572px;
+  height: 216px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #384255;
+}
+.about_company .company ul .btn_about_company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1829,357 +1839,209 @@ n_buy {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 20px 13px;
-  width: 121px;
-  height: 49px;
-  border: 1px solid #e83f3f;
-  background: #f53b4a;
-  border-radius: 4px;
-  /* txt / button */
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-  /*стили для эффекта btn*/
-  border: 0 solid;
-  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
-  outline-color: rgba(245, 59, 74, 0.6);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-.promotion .container_promotional_product_cards ol .product_card .card_description .basket_buy .btn_buy:hover {
-  border: 1px solid #ffffff;
-  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
-          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388;
-}
-.promotion .container_promotional_product_cards .btn_scroll_product_card {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 200px;
-  right: 645px;
-}
-
-.ideas_and_selections {
-  width: 1920px;
-  height: 756px;
-  background-image: url("../sass/img/main/main_ideas_and_selections/black_background.png");
-}
-.ideas_and_selections .conteiner_ideas_selections {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 120px 0px 100px;
-  gap: 30px;
-  margin: 0 auto;
-  background: #1a1a25;
-  width: 1410px;
-  height: 755px;
-}
-.ideas_and_selections .conteiner_ideas_selections h2 {
-  color: #ffffff;
-}
-.ideas_and_selections .conteiner_ideas_selections ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
-  width: 1410px;
-  height: 400px;
-  position: relative;
-}
-.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers {
-  position: relative;
-  width: 690px;
-  height: 400px;
-}
-.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers h2 {
-  position: absolute;
-  color: #ffffff;
-  gap: 20px;
-  width: 309px;
-  height: 102px;
-  left: 30px;
-  top: 30px;
-}
-.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers h2 span {
-  text-transform: uppercase;
-}
-.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers .clock {
-  position: absolute;
-  width: 98px;
-  height: 106px;
-  left: 23px;
-  top: 147px;
-}
-.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers p {
-  position: absolute;
-  width: 138px;
-  height: 69px;
-  left: 121px;
-  top: 168px;
-  font-size: 20px;
-  line-height: 114.94%;
-  color: #1a1a25;
-}
-.ideas_and_selections .conteiner_ideas_selections ul .fat_burning_trainers .bowflex {
-  position: absolute;
-  width: 165px;
-  height: 63px;
-  left: 30px;
-  top: 297px;
-}
-.ideas_and_selections .conteiner_ideas_selections .cardio_strength_training {
-  position: absolute;
-  width: 330px;
-  height: 400px;
-  left: 720px;
-}
-.ideas_and_selections .conteiner_ideas_selections .cardio_strength_training h2 {
-  position: absolute;
-  width: 207px;
-  height: 88px;
-  left: 30px;
-  top: 30px;
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 110%;
-  text-transform: uppercase;
-  color: #1a1a25;
-}
-.ideas_and_selections .conteiner_ideas_selections .cardio_strength_training h2 span {
-  font-size: 36px;
-  line-height: 110%;
-  color: #f53b49;
-}
-.ideas_and_selections .conteiner_ideas_selections .treadmill {
-  position: absolute;
-  width: 330px;
-  height: 400px;
-  left: 1080px;
-}
-.ideas_and_selections .conteiner_ideas_selections .treadmill h2 {
-  position: absolute;
-  width: 200px;
-  height: 93px;
-  left: 29px;
-  top: 30px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 110%;
-  text-transform: uppercase;
-  color: #f53b49;
-}
-.ideas_and_selections .conteiner_ideas_selections .treadmill h2 span {
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 120%;
-  color: #1a1a25;
-  text-transform: none;
-}
-.ideas_and_selections .conteiner_ideas_selections .treadmill .nautilus {
-  position: absolute;
-  width: 95px;
-  height: 57px;
-  left: 29px;
-  top: 131px;
-}
-.ideas_and_selections .conteiner_ideas_selections .btn_full_selection {
-  padding: 12px 20px 13px;
   gap: 10px;
-  width: 165px;
-  height: 42px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
-  /* txt / button */
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-}
-
-.popular_brands {
-  padding: 120px 0px 0px;
-  gap: 30px;
-  width: 1920px;
-  height: 807px;
-}
-.popular_brands .container_popular_brands {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 30px;
-  width: 1410px;
-  height: 666px;
-  margin: 0 auto;
-}
-.popular_brands .container_popular_brands .menu_popular_brands ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 16px;
-  width: 1410px;
-  height: 21px;
-}
-.popular_brands .container_popular_brands .category_popular_brands ul {
-  display: grid;
-  grid-template-columns: repeat(5, 282px);
-  grid-template-rows: repeat(3, 160px);
-  position: relative;
-  border: 1px solid rgba(133, 143, 164, 0.2);
-}
-.popular_brands .container_popular_brands .category_popular_brands ul li {
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 282px;
-  height: 160px;
-  border: 1px solid rgba(133, 143, 164, 0.2);
-}
-
-.btn_all_brands {
-  padding: 12px 20px 13px;
-  gap: 10px;
-  width: 125px;
+  width: 215px;
   height: 42px;
   border: 1px solid #f53b49;
   border-radius: 4px;
   /* txt / button */
   font-family: "Inter", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   color: #f53b49;
-  /*стили для эффекта btn*/
-  border: 0 solid;
-  -webkit-box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-          box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-  outline: 1px solid;
-  outline-color: rgba(245, 59, 75, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btn_all_brands:hover {
-  border: 1px solid #f53b49;
-  -webkit-box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-          box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #99bfd1;
+.map ul {
+  position: relative;
+  width: 1023px;
+  height: 612.06px;
+  margin-right: 60px;
+}
+.map ul .Saint-Petersburg {
+  position: absolute;
+  top: 319px;
+  left: 109px;
+}
+.map ul .Yaroslavl {
+  position: absolute;
+  top: 348px;
+  left: 161px;
+}
+.map ul .Moscow {
+  position: absolute;
+  top: 365px;
+  left: 144px;
+}
+.map ul .Nizhny_Novgorod {
+  position: absolute;
+  top: 364px;
+  left: 227px;
+}
+.map ul .Volzhsk {
+  position: absolute;
+  top: 383px;
+  left: 199px;
+}
+.map ul .Permian {
+  position: absolute;
+  top: 401px;
+  left: 251px;
+}
+.map ul .Ekaterinburg {
+  position: absolute;
+  top: 387px;
+  left: 299px;
+}
+.map ul .Tyumen {
+  position: absolute;
+  top: 404px;
+  left: 340px;
+}
+.map ul .Omsk {
+  position: absolute;
+  top: 442px;
+  left: 374px;
+}
+.map ul .Novosibirsk {
+  position: absolute;
+  top: 432px;
+  left: 458px;
+}
+.map ul .Krasnoyarsk {
+  position: absolute;
+  top: 387px;
+  left: 504px;
+}
+.map ul .Khabarovsk {
+  position: absolute;
+  top: 546px;
+  left: 800px;
+}
+.map ul .Vladivostok {
+  position: absolute;
+  top: 590px;
+  left: 792px;
+}
+.map ul .Rostov {
+  position: absolute;
+  top: 451px;
+  left: 150px;
+}
+.map ul .Volgograd {
+  position: absolute;
+  top: 461px;
+  left: 187px;
+}
+.map ul .Simferopol {
+  position: absolute;
+  top: 499px;
+  left: 103px;
+}
+.map ul .Krasnodar {
+  position: absolute;
+  top: 499px;
+  left: 142px;
+}
+.map ul .Stavropol {
+  position: absolute;
+  top: 519px;
+  left: 174px;
+}
+.map ul .Essentuki {
+  position: absolute;
+  top: 523px;
+  left: 152px;
 }
 
-.customer_assistance {
-  padding: 125px 0px 40px;
-  width: 1408px;
-  height: 500px;
-  margin: 0 auto;
-}
-.customer_assistance ul {
-  display: grid;
-  grid-template-columns: repeat(4, 352px);
-  grid-template-rows: repeat(1, 335px);
-  background: #ffffff;
-  border: 1px solid rgba(133, 143, 164, 0.2);
-  border-radius: 6px 0px 0px 6px;
-}
-.customer_assistance ul li {
+.span {
+  display: block;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  padding: 122px 46.5px 40px;
-  border: 1px solid rgba(133, 143, 164, 0.2);
-}
-.customer_assistance ul li img {
-  position: absolute;
-  width: 72px;
-  height: 72px;
-  left: 140px;
-  top: 30px;
-}
-.customer_assistance ul li h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.customer_assistance ul li p {
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  color: #384255;
-  margin-bottom: 20px;
-}
-.customer_assistance ul li a {
-  position: relative;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #f53b49;
-}
-.customer_assistance ul li a::after {
-  content: "";
-  background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
-  position: absolute;
-  padding: 4px 0px 0px;
+  margin: 30px auto;
   width: 10px;
   height: 10px;
-  margin-left: 8px;
-  top: 1.5px;
+  background: #f53b49;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.customer_assistance ul li a a:hover::after {
+
+.span:hover::before {
   content: "";
-  color: white;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #f53b49;
+  -webkit-animation: animate 1.5s infinite normal ease-out;
+          animation: animate 1.5s infinite normal ease-out;
 }
+
+@-webkit-keyframes animate {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #06e667;
+  /* Если вам нужны точки под наводимым текстом */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 14px;
+  width: 140px;
+  height: 25px;
+  background-color: #827f7f;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Расположить текст всплывающей подсказки */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Показывать текст всплывающей подсказки при наведении курсора на контейнер всплывающей подсказки */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  /* В нижней части всплывающей подсказки - цвет*/
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #827f7f transparent transparent transparent;
+}
+
 /*# sourceMappingURL=main.css.map */

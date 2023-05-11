@@ -62,21 +62,6 @@
 				line-height: 17px;
 				color: #f53b49;
 				border: 0 solid;
-				/*стили для эффекта btn*/
-				box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-				outline: 1px solid;
-				outline-color: rgba(245, 59, 75, 0.5);
-				outline-offset: 0px;
-				text-shadow: none;
-				transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-			}
-			.btn_banner:hover {
-				border: 1px solid #f53b49;
-				box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-				outline-color: rgba(255, 255, 255, 0);
-				outline-offset: 15px;
-				text-shadow: 1px 1px 2px #99bfd1;
-				// z-index: 1;
 			}
 		}
 	}
@@ -908,21 +893,6 @@
 	font-size: 14px;
 	line-height: 17px;
 	color: #f53b49;
-	/*стили для эффекта btn*/
-	border: 0 solid;
-	box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
-	outline: 1px solid;
-	outline-color: rgba(245, 59, 75, 0.5);
-	outline-offset: 0px;
-	text-shadow: none;
-	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-.btn_all_brands:hover {
-	border: 1px solid #f53b49;
-	box-shadow: inset 0 0 20px rgba(245, 59, 75, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
-	outline-color: rgba(255, 255, 255, 0);
-	outline-offset: 15px;
-	text-shadow: 1px 1px 2px #99bfd1;
 }
 
 // !!! customer assistance - помощь клиенту
@@ -934,7 +904,7 @@
 	ul {
 		display: grid;
 		grid-template-columns: repeat(4, 352px);
-		grid-template-rows: repeat(1, 335px);
+		grid-template-rows: repeat(1, 305px);
 		background: #ffffff;
 		border: 1px solid rgba(133, 143, 164, 0.2);
 		border-radius: 6px 0px 0px 6px;
@@ -943,7 +913,7 @@
 			display: flex;
 			flex-direction: column;
 			text-align: center;
-			padding: 122px 46.5px 40px;
+			padding: 102px 46.5px 25px;
 			border: 1px solid rgba(133, 143, 164, 0.2);
 			// border: 1px solid red;
 			img {
@@ -953,25 +923,32 @@
 				left: 140px;
 				top: 30px;
 			}
-
 			h3 {
 				margin-top: 20px;
-				margin-bottom: 10px;
+				width: 259px;
+				height: 48px;
 			}
 			p {
 				font-size: 16px;
 				line-height: 150%;
 				text-align: center;
 				color: #384255;
+				width: 257.51px;
+				height: 72px;
 				margin-bottom: 20px;
 			}
 			a {
+				// position: absolute;
+				width: 150px;
+				height: 17px;
 				position: relative;
 				font-family: "Inter", sans-serif;
 				font-weight: 600;
 				font-size: 14px;
 				line-height: 17px;
 				color: #f53b49;
+				margin-left: auto;
+				margin-right: auto;
 				&::after {
 					content: "";
 					background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
@@ -982,40 +959,255 @@
 					margin-left: 8px;
 					top: 1.5px;
 				}
-				a:hover::after {
-					content: "";
-					color: white;
-				}
 			}
-			// .help {
-			// 	position: absolute;
-			// 	// background-image: url("../sass/img/main/main_customer_assistance/помощь.png");
-			// 	width: 72px;
-			// 	height: 72px;
-			// 	left:  140px;
-			// 	top: 30px;
 
-			// }
+			a:hover {
+				content: "";
+				background-color: #ff818a;
+				// background-image: url("../img/main/main_customer_assistance/hand_phone.png");
+				color: white;
+			}
 		}
 	}
 }
 
-// .icon_customer_block {
-// 	position: absolute;
-// 	width: 75px;
-// 	height: 75px;
-// 	top: 30px;
-// 	left: 140px;
-// }
+.about_company {
+	position: relative;
+	display: flex;
+	// flex-flow: row wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1624px;
+	height: 670.87px;
+	gap: 29px;
+	margin-left: 254px;
+	margin-right: auto;
+	.company ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 120px 0px 0px;
+		gap: 40px;
+		position: absolute;
+		width: 572px;
+		height: 655px;
+		h4 {
+			margin-top: 20px;
+			width: 572px;
+			height: 144px;
+			font-family: "Inter", sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 34px;
+			line-height: 140%;
+			color: #384255;
+		}
+		p {
+			margin-top: 20px;
+			width: 572px;
+			height: 216px;
+			font-size: 18px;
+			line-height: 150%;
+			color: #384255;
+		}
+		// btn_about_company - Подробнее о компании
+		.btn_about_company {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 12px 20px 13px;
+			gap: 10px;
+			width: 215px;
+			height: 42px;
+			border: 1px solid #f53b49;
+			border-radius: 4px;
+			/* txt / button */
+			font-family: "Inter", sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 17px;
+			color: #f53b49;
+		}
+	}
+}
 
-// .customer_block {
-// 	position: relative;
-// 	display: flex;
-// 	flex-direction: column;
-// 	width: 352px;
-// 	height: 305px;
-// 	// justify-content: center;
-// 	// align-items: center;
-// 	text-align: center;
-// 	padding: 30px 46.5px 40px;
-// }
+.map ul {
+	position: relative;
+	width: 1023px;
+	height: 612.06px;
+	margin-right: 60px;
+	// подложка карты с поиощью "opacity: 0.7" на img - для точного позиционирования городов
+	// background-image: url("../sass/img/main/main_about_company/map_city.png");
+	.Saint-Petersburg {
+		position: absolute;
+		top: 319px;
+		left: 109px;
+	}
+	.Yaroslavl {
+		position: absolute;
+		top: 348px;
+		left: 161px;
+	}
+	.Moscow {
+		position: absolute;
+		top: 365px;
+		left: 144px;
+	}
+	.Nizhny_Novgorod {
+		position: absolute;
+		top: 364px;
+		left: 227px;
+	}
+	.Volzhsk {
+		position: absolute;
+		top: 383px;
+		left: 199px;
+	}
+	.Permian {
+		position: absolute;
+		top: 401px;
+		left: 251px;
+	}
+	.Ekaterinburg {
+		position: absolute;
+		top: 387px;
+		left: 299px;
+	}
+	.Tyumen {
+		position: absolute;
+		top: 404px;
+		left: 340px;
+	}
+	.Omsk {
+		position: absolute;
+		top: 442px;
+		left: 374px;
+	}
+	.Novosibirsk {
+		position: absolute;
+		top: 432px;
+		left: 458px;
+	}
+	.Krasnoyarsk {
+		position: absolute;
+		top: 387px;
+		left: 504px;
+	}
+	.Khabarovsk {
+		position: absolute;
+		top: 546px;
+		left: 800px;
+	}
+	.Vladivostok {
+		position: absolute;
+		top: 590px;
+		left: 792px;
+	}
+	.Rostov {
+		position: absolute;
+		top: 451px;
+		left: 150px;
+	}
+	.Volgograd {
+		position: absolute;
+		top: 461px;
+		left: 187px;
+	}
+	.Simferopol {
+		position: absolute;
+		top: 499px;
+		left: 103px;
+	}
+	.Krasnodar {
+		position: absolute;
+		top: 499px;
+		left: 142px;
+	}
+	.Stavropol {
+		position: absolute;
+		top: 519px;
+		left: 174px;
+	}
+	.Essentuki {
+		position: absolute;
+		top: 523px;
+		left: 152px;
+	}
+}
+
+// Анимация для красной точки на карте, которая будет при наведении мерцать
+.span {
+	display: block;
+	position: relative;
+	margin: 30px auto;
+	width: 10px;
+	height: 10px;
+	background: #f53b49;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.span:hover::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background: #f53b49;
+	animation: animate 1.5s infinite normal ease-out;
+}
+@keyframes animate {
+	from {
+		transform: scale(0);
+		opacity: 0.5;
+	}
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted rgb(6, 230, 103);
+	/* Если вам нужны точки под наводимым текстом */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	font-size: 14px;
+	width: 140px;
+	height: 25px;
+	background-color: rgb(130, 127, 127);
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	/* Расположить текст всплывающей подсказки */
+	position: absolute;
+	z-index: 1;
+}
+
+/* Показывать текст всплывающей подсказки при наведении курсора на контейнер всплывающей подсказки */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+// выплывает сверху
+.tooltip .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	/* В нижней части всплывающей подсказки - цвет*/
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(130, 127, 127) transparent transparent transparent;
+}

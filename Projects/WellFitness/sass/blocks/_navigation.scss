@@ -71,10 +71,9 @@
 				top: -2px;
 				transform: rotate(-90deg);
 			}
-
 			li &:after {
 				position: absolute;
-				content: "\2039";
+				content: "\25BE";
 				color: #fff;
 				font-size: 14px;
 				font-weight: bold;
@@ -126,3 +125,10 @@
 		}
 	}
 }
+
+// .ogl ol li:before {
+// 	content: '\25BE';
+// 	color: #ff0000;
+// 	margin-left: -26px;
+// 	padding-right: 5px;
+// 	font-size: 22px;
