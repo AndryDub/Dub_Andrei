@@ -1067,6 +1067,7 @@
 	}
 }
 
+//!!! map - карта с городами РФ
 .map ul {
 	position: relative;
 	width: 1023px;
@@ -1174,7 +1175,6 @@
 	img.city {
 		width: 150px;
 		height: 130px;
-		border-radius: 5px;
 		padding: 5px;
 	}
 }
@@ -1225,11 +1225,11 @@
 	font-size: 14px;
 	width: 160px;
 	height: 160px;
-	background-color: rgba(130, 127, 127, 0.6);
+	background-color: rgba(130, 127, 127, 0.8);
 	color: #fff;
 	text-align: center;
-	padding: 10px 0 0 0;
-	border-radius: 4px;
+	padding: 6px 0 0 0;
+	border-radius: 6px;
 	delay: 550;
 	/* Расположить текст всплывающей подсказки - относительно объекта*/
 	position: absolute;
@@ -1255,7 +1255,7 @@
 	margin-left: -8px;
 	border-width: 8px;
 	border-style: solid;
-	border-color: rgba(130, 127, 127, 0.6) transparent transparent transparent;
+	border-color: rgba(130, 127, 127, 0.8) transparent transparent transparent;
 }
 
 // !!! become_partner - стать партнером

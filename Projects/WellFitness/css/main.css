@@ -2079,7 +2079,6 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 .map ul img.city {
   width: 150px;
   height: 130px;
-  border-radius: 5px;
   padding: 5px;
 }
 
@@ -2145,11 +2144,11 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   font-size: 14px;
   width: 160px;
   height: 160px;
-  background-color: rgba(130, 127, 127, 0.6);
+  background-color: rgba(130, 127, 127, 0.8);
   color: #fff;
   text-align: center;
-  padding: 10px 0 0 0;
-  border-radius: 4px;
+  padding: 6px 0 0 0;
+  border-radius: 6px;
   delay: 550;
   /* Расположить текст всплывающей подсказки - относительно объекта*/
   position: absolute;
@@ -2172,7 +2171,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   margin-left: -8px;
   border-width: 8px;
   border-style: solid;
-  border-color: rgba(130, 127, 127, 0.6) transparent transparent transparent;
+  border-color: rgba(130, 127, 127, 0.8) transparent transparent transparent;
 }
 
 .become_partner {
@@ -2598,6 +2597,9 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 130%;
   color: #858fa4;
 }
+.wrapper .links_and_contacts .blocks_links :hover {
+  color: #fff;
+}
 .wrapper .block_contacts {
   margin-left: 150px;
 }
@@ -2687,24 +2689,23 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 140%;
   color: #ffffff;
 }
-.wrapper .block_contacts .privacy_policy {
+.wrapper .block_contacts ul .privacy_policy {
   margin-top: 35px;
 }
-.wrapper .block_contacts .privacy_policy a {
+.wrapper .block_contacts ul .privacy_policy a {
   font-size: 14px;
   line-height: 140%;
   color: #4b7ee8;
 }
-.wrapper .block_contacts .public_offer {
+.wrapper .block_contacts ul .public_offer {
   margin-top: 7px;
 }
-.wrapper .block_contacts .public_offer a {
+.wrapper .block_contacts ul .public_offer a {
   font-size: 14px;
   line-height: 140%;
   color: #4b7ee8;
 }
-
-.social_links {
+.wrapper .social_links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2714,7 +2715,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
           flex-direction: row;
   margin-top: 51px;
 }
-.social_links ul {
+.wrapper .social_links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2732,11 +2733,14 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   height: 40px;
   margin: 0 auto;
 }
-.social_links ul .footer_logo {
+.wrapper .social_links ul .footer_logo {
   width: 275px;
   height: 34px;
 }
-.social_links ul .messengers {
+.wrapper .social_links ul .messengers {
+  margin-left: 205px;
+}
+.wrapper .social_links ul .messengers ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2744,19 +2748,42 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 10px;
   width: 92px;
   height: 24px;
   opacity: 0.5;
-  margin-left: 205px;
 }
-.social_links ul .footer_partners {
+.wrapper .social_links ul .messengers ul .instagram {
+  width: 24px;
+  height: 24px;
+}
+.wrapper .social_links ul .messengers ul .facebook {
+  width: 24px;
+  height: 24px;
+}
+.wrapper .social_links ul .messengers ul .youtube {
+  width: 24px;
+  height: 24px;
+}
+.wrapper .social_links ul .messengers ul a {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+.wrapper .social_links ul .messengers :hover {
+  fill: #fff;
+  stroke: transform;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+.wrapper .social_links ul .footer_partners {
   margin-left: 148px;
 }
-.social_links ul .footer_partners ul {
+.wrapper .social_links ul .footer_partners ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2771,7 +2798,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   width: 290px;
   height: 37px;
 }
-.social_links ul .footer_partners ul .btn_for_partners {
+.wrapper .social_links ul .footer_partners ul .btn_for_partners {
   position: relative;
   padding: 10px;
   width: 144px;
@@ -2785,7 +2812,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 17px;
   color: #858fa4;
 }
-.social_links ul .footer_partners ul .btn_for_dealers {
+.wrapper .social_links ul .footer_partners ul .btn_for_dealers {
   padding: 10px;
   width: 112px;
   height: 37px;
@@ -2798,15 +2825,15 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 17px;
   color: #858fa4;
 }
-.social_links ul .footer_partners .btn_for_dealers:hover,
-.social_links ul .footer_partners .btn_for_partners:hover {
+.wrapper .social_links ul .footer_partners .btn_for_dealers:hover,
+.wrapper .social_links ul .footer_partners .btn_for_partners:hover {
   background: #384255;
   color: #ffffff;
 }
-.social_links .payment_cards {
+.wrapper .social_links ul .payment_cards {
   margin-left: 77px;
 }
-.social_links .payment_cards ul {
+.wrapper .social_links ul .payment_cards ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2821,18 +2848,29 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   width: 254.12em;
   height: 40px;
 }
-.social_links .payment_cards ul .icon_VISA {
+.wrapper .social_links ul .payment_cards ul .icon_VISA {
   width: 40px;
   height: 40px;
 }
-.social_links .payment_cards ul a {
+.wrapper .social_links ul .payment_cards ul .icon_Mastercard {
+  width: 40px;
+  height: 40px;
+}
+.wrapper .social_links ul .payment_cards ul .WebMoney {
+  width: 30px;
+  height: 32px;
+}
+.wrapper .social_links ul .payment_cards ul .PayPal {
+  width: 54.12px;
+  height: 20px;
+}
+.wrapper .social_links ul .payment_cards ul a {
   -webkit-transition: 200ms;
   transition: 200ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
-
-.payment_cards :hover {
+.wrapper .social_links ul .payment_cards :hover {
   fill: #fff;
   -webkit-transition: 200ms;
   transition: 200ms;
@@ -2847,5 +2885,4 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 140%;
   color: #858fa4;
 }
-
 /*# sourceMappingURL=main.css.map */

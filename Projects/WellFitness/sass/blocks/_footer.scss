@@ -71,13 +71,17 @@
 				}
 			}
 		}
-
-		// !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
-		// !!! из block_contacts второго li
-		// &:hover {
-		// 	color: #fff;
-		// }
+		.blocks_links :hover {
+			color: #fff;
+		}
 	}
+	// !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
+	// !!! из block_contacts второго li
+	// &:hover {
+	// 	color: #fff;
+	// }
+
+	// .block_contacts - номера телефонов, Email, рассылки
 	.block_contacts {
 		margin-left: 150px;
 		ul {
@@ -85,6 +89,7 @@
 			flex-direction: column;
 			width: 259px;
 			height: 335px;
+			// mailing_list - подписаться на рассылку
 			.mailing_list {
 				background: rgba(133, 143, 164, 0.15);
 				border-radius: 5px;
@@ -150,140 +155,176 @@
 					}
 				}
 			}
-		}
-		.privacy_policy {
-			margin-top: 35px;
-			a {
-				font-size: 14px;
-				line-height: 140%;
-				color: #4b7ee8;
+
+			.privacy_policy {
+				margin-top: 35px;
+				a {
+					font-size: 14px;
+					line-height: 140%;
+					color: #4b7ee8;
+				}
 			}
-		}
-		.public_offer {
-			margin-top: 7px;
-			a {
-				font-size: 14px;
-				line-height: 140%;
-				color: #4b7ee8;
+			.public_offer {
+				margin-top: 7px;
+				a {
+					font-size: 14px;
+					line-height: 140%;
+					color: #4b7ee8;
+				}
 			}
 		}
 	}
-}
 
-// !!! social_links - социальные ссылки
-.social_links {
-	display: flex;
-	flex-direction: row;
-
-	margin-top: 51px;
-	ul {
+	// !!! social_links - социальные ссылки
+	.social_links {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
-		width: 1410px;
-		height: 40px;
-		margin: 0 auto;
-
-		.footer_logo {
-			width: 275px;
-			height: 34px;
-		}
-		.messengers {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-start;
-			gap: 10px;
-			width: 92px;
-			height: 24px;
-			opacity: 0.5;
-			margin-left: 205px;
-		}
-		// btn  for_partners and for_dealers - кнопки, для партнёров и для дилеров
-		.footer_partners {
-			margin-left: 148px;
-			ul {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				gap: 30px;
-				width: 290px;
-				height: 37px;
-				.btn_for_partners {
-					position: relative;
-					padding: 10px;
-					width: 144px;
-					height: 37px;
-					border: 1px solid rgba(144, 156, 181, 0.5);
-					border-radius: 6px;
-					/* txt / button */
-					font-family: "Inter", sans-serif;
-					font-weight: 700;
-					font-size: 14px;
-					line-height: 17px;
-					color: #858fa4;
-				}
-				.btn_for_dealers {
-					padding: 10px;
-					width: 112px;
-					height: 37px;
-					border: 1px solid rgba(144, 156, 181, 0.5);
-					border-radius: 6px;
-					/* txt / button */
-					font-family: "Inter", sans-serif;
-					font-weight: 700;
-					font-size: 14px;
-					line-height: 17px;
-					color: #858fa4;
-				}
-			}
-			.btn_for_dealers:hover,
-			.btn_for_partners:hover {
-				background: #384255;
-				color: #ffffff;
-			}
-		}
-	}
-	// payment_cards - карты оплаты
-	.payment_cards {
-		margin-left: 77px;
+		margin-top: 51px;
 		ul {
 			display: flex;
 			flex-direction: row;
+			justify-content: flex-start;
 			align-items: center;
-			gap: 30px;
-			width: 254.12em;
+			width: 1410px;
 			height: 40px;
-			.icon_VISA {
-				width: 40px;
-				height: 40px;
-							}
-			.icon_Mastercard {
+			margin: 0 auto;
+
+			// logo - логотип
+			.footer_logo {
+				width: 275px;
+				height: 34px;
 			}
 
-			a {
-
+			// messengers - соц. сети
+			.messengers {
+				margin-left: 205px;
+				ul {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					gap: 10px;
+					width: 92px;
+					height: 24px;
+					opacity: 0.5;
+					.instagram {
+						width: 24px;
+						height: 24px;
+					}
+					.facebook {
+						width: 24px;
+						height: 24px;
+					}
+					.youtube {
+						width: 24px;
+						height: 24px;
+					}
+					a {
+						transition: 200ms;
+						transition-timing-function: ease-in-out;
+					}
+				}
+			}
+			.messengers :hover {
+				fill: #fff;
+				stroke: transform;
 				transition: 200ms;
-				transition-timing-function: ease-in-out;
+			}
+
+			// btn  for_partners and for_dealers - кнопки, для партнёров и для дилеров
+			.footer_partners {
+				margin-left: 148px;
+				ul {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 30px;
+					width: 290px;
+					height: 37px;
+					.btn_for_partners {
+						position: relative;
+						padding: 10px;
+						width: 144px;
+						height: 37px;
+						border: 1px solid rgba(144, 156, 181, 0.5);
+						border-radius: 6px;
+						/* txt / button */
+						font-family: "Inter", sans-serif;
+						font-weight: 700;
+						font-size: 14px;
+						line-height: 17px;
+						color: #858fa4;
+					}
+					.btn_for_dealers {
+						padding: 10px;
+						width: 112px;
+						height: 37px;
+						border: 1px solid rgba(144, 156, 181, 0.5);
+						border-radius: 6px;
+						/* txt / button */
+						font-family: "Inter", sans-serif;
+						font-weight: 700;
+						font-size: 14px;
+						line-height: 17px;
+						color: #858fa4;
+					}
+				}
+							.btn_for_dealers:hover,
+				.btn_for_partners:hover {
+					background: #384255;
+					color: #ffffff;
+				}
+			}
+
+			// payment_cards - карты оплаты
+			.payment_cards {
+				margin-left: 77px;
+				ul {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 30px;
+					width: 254.12em;
+					height: 40px;
+					.icon_VISA {
+						width: 40px;
+						height: 40px;
+					}
+					.icon_Mastercard {
+						width: 40px;
+						height: 40px;
+					}
+					.WebMoney {
+						width: 30px;
+						height: 32px;
+					}
+					.PayPal {
+						width: 54.12px;
+						height: 20px;
+					}
+					a {
+						transition: 200ms;
+						transition-timing-function: ease-in-out;
+					}
+				}
+			}
+
+			.payment_cards :hover {
+				fill: #fff;
+				// stroke: #fff;
+				transition: 200ms;
 			}
 		}
 	}
 }
-.payment_cards :hover {
-	fill: #fff;
-	// stroke: #fff;
-	transition: 200ms;
-}
+		//  !!! copyright - защита авторских прав
+		.copyright {
+			margin-top: 17px;
+			margin-left: 255px;
+			p {
+				font-size: 14px;
+				line-height: 140%;
+				color: #858fa4;
+			}
+		}
+	
 
-
-
-//  !!! copyright - защита авторских прав
-.copyright {
-	margin-top: 17px;
-	margin-left: 255px;
-	p {
-		font-size: 14px;
-		line-height: 140%;
-		color: #858fa4;
-	}
-}
