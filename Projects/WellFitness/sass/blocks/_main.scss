@@ -461,7 +461,7 @@
 					.img_circle {
 						display: block;
 						width: 8px;
-						height: 8px;
+						height: 9px;
 						list-style-type: none;
 						background-image: url("../sass/img/main/main_promotion/icon/Ellipse_green_0.svg");
 						transition: 0.1s;
@@ -633,18 +633,19 @@
 							}
 						}
 					}
-					// стили для эффекта btn_buy
+					// стили для эффекта btn_buy на красном фоне
 					.btn_buy:hover {
 						border: 1px solid #ffffff;
-						box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
+						box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.2);
 						outline-color: rgba(255, 255, 255, 0);
-						outline-offset: 15px;
+						outline-offset: 10px;
 						text-shadow: 1px 1px 2px #427388;
 					}
 				}
 				// Эффекты для выплывающего целиком блока product_card и card_description
 				.product_card:hover,
 				&:hover {
+					// border-radius: 6px;
 					transform: scale(1.03);
 					transition: 0.6s;
 					// будет подкрашиваться выезжающий фон прямоугольного изображения
@@ -688,9 +689,12 @@
 
 // !!! ideas_and_selections - Идеи и подборки
 .ideas_and_selections {
+	position: relative;
 	width: 1920px;
 	height: 756px;
-	background-image: url("../sass/img/main/main_ideas_and_selections/black_background.png");
+	background: #1a1a25;
+	// background-image: url("../sass/img/main/main_ideas_and_selections/black_background.png");
+	z-index: 0;
 	.conteiner_ideas_selections {
 		display: flex;
 		flex-direction: column;
@@ -698,7 +702,7 @@
 		padding: 120px 0px 100px;
 		gap: 30px;
 		margin: 0 auto;
-		background: #1a1a25;
+		// background: #1a1a25;
 		width: 1410px;
 		height: 755px;
 		h2 {
@@ -763,7 +767,6 @@
 			width: 330px;
 			height: 400px;
 			// background: url("../sass/img/main/main_ideas_and_selections/баннер 2.png");
-
 			h2 {
 				position: absolute;
 				width: 207px;
@@ -790,7 +793,6 @@
 			width: 330px;
 			height: 400px;
 			// background-image: url("../sass/img/main/main_ideas_and_selections/баннер 3.png");
-
 			h2 {
 				position: absolute;
 				width: 200px;
@@ -820,53 +822,34 @@
 				top: 131px;
 			}
 		}
+
 		// btn_full_selection - Полная подборка
 		.btn_full_selection {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			padding: 12px 20px 13px;
-			gap: 10px;
-			width: 165px;
+			width: 176px;
 			height: 42px;
-			border: 1px solid rgba(255, 255, 255, 0.7);
-			border-radius: 4px;
 			/* txt / button */
 			font-family: "Inter", sans-serif;
 			font-weight: 700;
 			font-size: 14px;
 			line-height: 17px;
 			color: #ffffff;
+		}
 
-			// btn_full_selection - красивый border с переливом цветовой гаммы на черном фоне
-			// 	.btn_full_selection {
-			// 		--borderWidth: 3px;
-			// 		background: #1D1F20;
-			// 		position: relative;
-			// 		border-radius: var(--borderWidth);
-			// }
-			// 		.btn_full_selection:after {
-			// 		content: '';
-			// 		position: absolute;
-			// 		top: calc(-1 * var(--borderWidth));
-			// 		left: calc(-1 * var(--borderWidth));
-			// 		height: calc(100% + var(--borderWidth) * 2);
-			// 		width: calc(100% + var(--borderWidth) * 2);
-			// 		background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-			// 		border-radius: calc(2 * var(--borderWidth));
-			// 		z-index: -1;
-			// 		animation: animatedgradient 3s ease alternate infinite;
-			// 		background-size: 300% 300%;
-			// 	 }
-			// 	 @keyframes animatedgradient {
-			// 		0% {
-			// 			background-position: 0% 50%;
-			// 		}
-			// 		50% {
-			// 			background-position: 100% 50%;
-			// 		}
-			// 		100% {
-			// 			background-position: 0% 50%;
-			// 		}
-			// 	}
-			// }
+		// стили для Animated_border_gradient
+		@keyframes animatedgradient {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
 		}
 	}
 }
@@ -918,7 +901,7 @@
 		.category_popular_brands img:hover {
 			transform: scale(1.2);
 			transition: 0.6s;
-			// будет подкрашиваться выезжающий фон прямоугольного изображения
+			// будет подкрашиваться выезжающий фон прямоугольника в котором расположено само изображения
 			// box-shadow: 2px 2px 10px 2px rgba($color: #938787, $alpha: 1);
 			// overflow: hidden;
 			// z-index: 1;
@@ -1188,6 +1171,12 @@
 		top: 523px;
 		left: 152px;
 	}
+	img.city {
+		width: 150px;
+		height: 130px;
+		border-radius: 5px;
+		padding: 5px;
+	}
 }
 
 // Анимация для красной точки на карте, которая будет при наведении мерцать
@@ -1234,17 +1223,17 @@
 .tooltip .tooltiptext {
 	visibility: hidden;
 	font-size: 14px;
-	width: 140px;
-	height: 110px;
-	background-color: rgb(130, 127, 127);
+	width: 160px;
+	height: 160px;
+	background-color: rgba(130, 127, 127, 0.6);
 	color: #fff;
 	text-align: center;
-	padding: 5px 0;
-	border-radius: 6px;
+	padding: 10px 0 0 0;
+	border-radius: 4px;
 	delay: 550;
 	/* Расположить текст всплывающей подсказки - относительно объекта*/
 	position: absolute;
-	left: -65px;
+	left: -75px;
 	bottom: 15px;
 	z-index: 1;
 }
@@ -1263,11 +1252,12 @@
 	left: 50%;
 
 	/* В нижней части всплывающей подсказки - цвет*/
-	margin-left: -5px;
-	border-width: 5px;
+	margin-left: -8px;
+	border-width: 8px;
 	border-style: solid;
-	border-color: rgb(130, 127, 127) transparent transparent transparent;
+	border-color: rgba(130, 127, 127, 0.6) transparent transparent transparent;
 }
+
 // !!! become_partner - стать партнером
 .become_partner {
 	display: flex;
@@ -1278,6 +1268,7 @@
 	height: 396px;
 	margin: 0 auto;
 	background: #1a1a25;
+	z-index: 0;
 	margin-top: 80px;
 	gap: 141px;
 	position: relative;
@@ -1374,6 +1365,7 @@
 			}
 		}
 		li:nth-child(2) {
+			// !!! btn_become_partner - стать партнёром + gradient_border
 			.btn_become_partner {
 				display: flex;
 				flex-direction: row;
@@ -1383,11 +1375,9 @@
 				gap: 10px;
 				width: 171px;
 				height: 42px;
-				border: 1px solid rgba(255, 255, 255, 0.7);
 				border-radius: 4px;
 				/* txt / button */
 				font-family: "Inter";
-				font-style: normal;
 				font-weight: 700;
 				font-size: 14px;
 				line-height: 17px;
@@ -1497,8 +1487,7 @@
 				}
 			}
 		}
-		.news_card:hover,
-		.news_card_description:hover {
+		.news_card:hover {
 			transform: translateY(-10px);
 			transition: 0.5s;
 		}

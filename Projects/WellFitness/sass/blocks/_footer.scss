@@ -1,52 +1,289 @@
-.footer_wrapper {
+.wrapper {
 	position: relative;
 	width: 1920px;
 	height: 620px;
 	// background-image: url("../sass/img/footer/Rectangle_black.png");
 	background: #1a1a25;
 	box-shadow: 0px 10px 50px rgba(133, 143, 164, 0.05);
-}
-.footer_blocks {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 30px;
-	position: absolute;
-	width: 930px;
-	height: 303px;
-	left: 255px;
-	top: 88.13px;
-	ul {
+	padding: 80px 0 50px;
+	.links_and_contacts {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		align-items: flex-start;
-		padding: 0px;
-		gap: 40px;
+		width: 1410px;
+		height: 363.87px;
+		margin: 0 auto;
+		border-bottom: 2px solid rgba(133, 143, 164, 0.15);
+		.blocks_links {
+			ol {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				gap: 30px;
+				width: 930px;
+				height: 303px;
+				.block_catalog {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 12px;
+					width: 210px;
+					height: 247px;
+				}
+				.block_support {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 12px;
+					width: 210px;
+					height: 291px;
+				}
+				.block_services {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 12px;
+					width: 210px;
+					height: 237px;
+				}
+				.block_about_company {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 12px;
+					width: 210px;
+					height: 303px;
+				}
+				p {
+					font-family: "Inter";
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 130%;
+					color: #ffffff;
+					margin-bottom: 18px;
+				}
+				a {
+					font-family: "Inter", sans-serif;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 130%;
+					color: #858fa4;
+				}
+			}
+		}
 
-		width: 210px;
-		height: 247px;
-		.footer_links_catalog {
-			
+		// !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
+		// !!! из block_contacts второго li
+		// &:hover {
+		// 	color: #fff;
+		// }
+	}
+	.block_contacts {
+		margin-left: 150px;
+		ul {
+			display: flex;
+			flex-direction: column;
+			width: 259px;
+			height: 335px;
+			.mailing_list {
+				background: rgba(133, 143, 164, 0.15);
+				border-radius: 5px;
+				padding: 14px;
+				width: 255px;
+				height: 48px;
+				a {
+					font-size: 14px;
+					line-height: 140%;
+					color: #858fa4;
+					width: 207px;
+					height: 20px;
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						background-image: url("../sass/img/footer/vector_рассылка.png");
+						width: 20px;
+						height: 20px;
+						right: -40px;
+						bottom: -3px;
+					}
+				}
+			}
+			.phone {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				width: 259px;
+				height: 80px;
+				margin-top: 40px;
+				a {
+					font-family: "Inter", sans-serif;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 140%;
+					color: #858fa4;
+					span {
+						font-size: 14px;
+						line-height: 140%;
+						color: #ffffff;
+					}
+				}
+			}
+			.email {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				width: 140px;
+				height: 47px;
+				margin-top: 23px;
+				a {
+					font-family: "Mazzard", sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: #858fa4;
+					span {
+						font-size: 14px;
+						line-height: 140%;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+		.privacy_policy {
+			margin-top: 35px;
+			a {
+				font-size: 14px;
+				line-height: 140%;
+				color: #4b7ee8;
+			}
+		}
+		.public_offer {
+			margin-top: 7px;
+			a {
+				font-size: 14px;
+				line-height: 140%;
+				color: #4b7ee8;
+			}
 		}
 	}
 }
 
-// footer
-//    footer__wrapper
-//      footer__item footer__item_columns
-// +      footer__column noname-column
-//          noname-column__wrapper
-//            noname-column__header Рубрикатор
-//            noname-column__content
-// +      footer__column noname-column
-//          noname-column__wrapper
-//            noname-column__header Информация
-//            noname-column__content
-// +      footer__column noname-column
-//          noname-column__wrapper
-//            noname-column__header Подписка
-//            noname-column__content
-//      footer__item footer__item_info
-//        footer__copyright
-//        footer__social-links
+// !!! social_links - социальные ссылки
+.social_links {
+	display: flex;
+	flex-direction: row;
+
+	margin-top: 51px;
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		width: 1410px;
+		height: 40px;
+		margin: 0 auto;
+
+		.footer_logo {
+			width: 275px;
+			height: 34px;
+		}
+		.messengers {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 10px;
+			width: 92px;
+			height: 24px;
+			opacity: 0.5;
+			margin-left: 205px;
+		}
+		// btn  for_partners and for_dealers - кнопки, для партнёров и для дилеров
+		.footer_partners {
+			margin-left: 148px;
+			ul {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 30px;
+				width: 290px;
+				height: 37px;
+				.btn_for_partners {
+					position: relative;
+					padding: 10px;
+					width: 144px;
+					height: 37px;
+					border: 1px solid rgba(144, 156, 181, 0.5);
+					border-radius: 6px;
+					/* txt / button */
+					font-family: "Inter", sans-serif;
+					font-weight: 700;
+					font-size: 14px;
+					line-height: 17px;
+					color: #858fa4;
+				}
+				.btn_for_dealers {
+					padding: 10px;
+					width: 112px;
+					height: 37px;
+					border: 1px solid rgba(144, 156, 181, 0.5);
+					border-radius: 6px;
+					/* txt / button */
+					font-family: "Inter", sans-serif;
+					font-weight: 700;
+					font-size: 14px;
+					line-height: 17px;
+					color: #858fa4;
+				}
+			}
+			.btn_for_dealers:hover,
+			.btn_for_partners:hover {
+				background: #384255;
+				color: #ffffff;
+			}
+		}
+	}
+	// payment_cards - карты оплаты
+	.payment_cards {
+		margin-left: 77px;
+		ul {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 30px;
+			width: 254.12em;
+			height: 40px;
+			.icon_VISA {
+				width: 40px;
+				height: 40px;
+							}
+			.icon_Mastercard {
+			}
+
+			a {
+
+				transition: 200ms;
+				transition-timing-function: ease-in-out;
+			}
+		}
+	}
+}
+.payment_cards :hover {
+	fill: #fff;
+	// stroke: #fff;
+	transition: 200ms;
+}
+
+
+
+//  !!! copyright - защита авторских прав
+.copyright {
+	margin-top: 17px;
+	margin-left: 255px;
+	p {
+		font-size: 14px;
+		line-height: 140%;
+		color: #858fa4;
+	}
+}

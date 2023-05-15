@@ -75,7 +75,8 @@ h3 {
 	color: #f53b49;
 }
 
-// !!! btn_effect - стили для эффекта btn на белом фоне
+// !!! btn_effect - стили для эффекта всех кнопок btn 
+// !!! расположеных на белом фоне
 .btn_effect {
 	box-shadow: inset 0 0 20px rgba(236, 73, 73, 0);
 	outline: 1px solid;
@@ -100,4 +101,27 @@ h3 {
 		line-height: 130%;
 		color: #384255;
 	}
+}
+
+// !!! gradient_border - красивый border с градиентом 
+// !!! для btn - расположенных на черном фоне
+.gradient_border {
+	position: relative;
+	background: #1d1f20;
+	--borderWidth: 3px;
+	border-radius: var(--borderWidth);
+}
+// стили для Animated_border_gradient
+.gradient_border::after {
+	content: "";
+	position: absolute;
+	top: calc(-1 * var(--borderWidth));
+	left: calc(-1 * var(--borderWidth));
+	height: calc(100% + var(--borderWidth) * 2);
+	width: calc(100% + var(--borderWidth) * 2);
+	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	animation: animatedgradient 3s ease alternate infinite;
+	background-size: 300% 300%;
 }
