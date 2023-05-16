@@ -1042,6 +1042,84 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   top: 30px;
 }
 
+.categories_simulators_for_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1410px;
+  height: 1203px;
+  margin: 0 auto;
+}
+.categories_simulators_for_home p {
+  width: 1410px;
+  height: 80px;
+  padding-top: 60px;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(56, 66, 85, 0.6);
+}
+.categories_simulators_for_home h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 110%;
+  color: #1a1a25;
+  margin-top: 30px;
+}
+
+.links_simulators_for_home {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 330px);
+  grid-template-rows: 521px 446px;
+  width: 1410px;
+  height: 997px;
+  margin-top: 54px;
+}
+.links_simulators_for_home ol {
+  display: grid;
+  grid-auto-flow: column;
+  border-radius: 6px;
+  gap: 30px;
+}
+.links_simulators_for_home ol img {
+  width: 330px;
+  height: 200px;
+}
+.links_simulators_for_home ol .description_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+  gap: 16px;
+  width: 330px;
+  height: 321px;
+  background: #ffffff;
+}
+.links_simulators_for_home ol .description_links h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1a1a25;
+}
+.links_simulators_for_home ol .description_links a {
+  font-size: 16px;
+  line-height: 150%;
+  color: #1a1a25;
+}
+
 .for_fitness_clubs {
   width: 1410px;
   height: 725px;
