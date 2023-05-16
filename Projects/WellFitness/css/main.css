@@ -152,7 +152,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../sass/img/header/header.png");
+  background-image: url("../img/header/header.png");
 }
 header .conteiner_header {
   display: -webkit-box;
@@ -656,7 +656,7 @@ header .conteiner_header .btn_come_in a {
 }
 .frame_nav li:first-child::after {
   content: "";
-  background-image: url("../sass/img/header/frame_nav_svg/Group 15.png");
+  background-image: url("../img/header/frame_nav_svg/Group 15.png");
   position: absolute;
   left: 19.9%;
   right: 68.07%;
@@ -674,7 +674,7 @@ header .conteiner_header .btn_come_in a {
 .frame_nav li:nth-child(2)::after {
   content: "";
   position: absolute;
-  background-image: url("../sass/img/header/frame_nav_svg/Group 15.png");
+  background-image: url("../img/header/frame_nav_svg/Group 15.png");
   left: 51.5%;
   right: 36.5%;
   top: -11.71%;
@@ -690,7 +690,7 @@ header .conteiner_header .btn_come_in a {
 }
 .frame_nav li:last-child::after {
   content: "";
-  background-image: url("../sass/img/header/frame_nav_svg/Group .png");
+  background-image: url("../img/header/frame_nav_svg/Group .png");
   position: absolute;
   left: 83.9%;
   right: 4.07%;
@@ -870,7 +870,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   width: 1800px;
   height: 500px;
   border-radius: 10px;
-  background-image: url("../sass/img/main/main_banner_list/banner_1.png");
+  background-image: url("../img/main/main_banner_list/banner_1.png");
 }
 .banner_list ul li:nth-child(1) {
   position: absolute;
@@ -1311,17 +1311,17 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   width: 8px;
   height: 9px;
   list-style-type: none;
-  background-image: url("../sass/img/main/main_promotion/icon/Ellipse_green_0.svg");
+  background-image: url("../img/main/main_promotion/icon/Ellipse_green_0.svg");
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 .promotion .container_promotional_product_cards ol .product_card .card_description .img_circle:hover,
 .promotion .container_promotional_product_cards ol .product_card .card_description .img_circle:hover ~ .img_circle {
-  background: url("../sass/img/main/main_promotion/icon/Ellipse_green_1.svg");
+  background: url("../img/main/main_promotion/icon/Ellipse_green_1.svg");
 }
 .promotion .container_promotional_product_cards ol .product_card .card_description .img_circle:active,
 .promotion .container_promotional_product_cards ol .product_card .card_description .img_circle:active ~ .img_circle {
-  background: url("../sass/img/main/main_promotion/icon/Ellipse_green_0.svg");
+  background: url("../img/main/main_promotion/icon/Ellipse_green_0.svg");
 }
 .promotion .container_promotional_product_cards ol .product_card .card_description .product_video_review a {
   position: absolute;
@@ -1386,17 +1386,17 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   width: 12px;
   height: 12px;
   list-style-type: none;
-  background-image: url("../sass/img/main/main_promotion/icon/star_0.svg");
+  background-image: url("../img/main/main_promotion/icon/star_0.svg");
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 .promotion .container_promotional_product_cards ol .product_card .card_description .stars .img_star:hover,
 .promotion .container_promotional_product_cards ol .product_card .card_description .stars .img_star:hover ~ .img_star {
-  background: url("../sass/img/main/main_promotion/icon/star_1.svg");
+  background: url("../img/main/main_promotion/icon/star_1.svg");
 }
 .promotion .container_promotional_product_cards ol .product_card .card_description .stars .img_star:active,
 .promotion .container_promotional_product_cards ol .product_card .card_description .stars .img_star:active ~ .img_star {
-  background: url("../sass/img/main/main_promotion/icon/star_0.svg");
+  background: url("../img/main/main_promotion/icon/star_0.svg");
 }
 .promotion .container_promotional_product_cards ol .product_card .card_description .discount_price {
   grid-row: 4;
@@ -1478,7 +1478,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 .promotion .container_promotional_product_cards ol .product_card .card_description .basket_buy .btn_buy::before {
   content: "";
   position: absolute;
-  background: url("../sass/img/main/main_promotion/icon/корзина.png") no-repeat;
+  background: url("../img/main/main_promotion/icon/корзина.png") no-repeat;
   width: 24px;
   height: 24px;
   left: -30px;
@@ -1877,7 +1877,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
 }
 .customer_assistance ul li a::after {
   content: "";
-  background: url("../sass/img/main/main_customer_assistance/arrow.png") no-repeat;
+  background: url("../img/main/main_customer_assistance/arrow.png") no-repeat;
   position: absolute;
   padding: 4px 0px 0px;
   width: 10px;
@@ -1979,7 +1979,7 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   width: 1023px;
   height: 650px;
   margin-right: 60px;
-  background-image: url("../sass/img/main/main_about_company/map_city.png");
+  background-image: url("../img/main/main_about_company/map_city.png");
 }
 .map ul .Saint-Petersburg {
   position: absolute;
@@ -2885,4 +2885,5 @@ li .conteiner_navigation .navigation_menu .navigation_children:after ul {
   line-height: 140%;
   color: #858fa4;
 }
+
 /*# sourceMappingURL=main.css.map */

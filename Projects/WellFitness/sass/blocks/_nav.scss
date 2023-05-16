@@ -301,7 +301,7 @@
 
 	li:first-child::after {
 		content: "";
-		background-image: url("../sass/img/header/frame_nav_svg/Group 15.png");
+		background-image: url("../img/header/frame_nav_svg/Group 15.png");
 		position: absolute;
 		left: 19.9%;
 		right: 68.07%;
@@ -319,7 +319,7 @@
 	li:nth-child(2)::after {
 		content: "";
 		position: absolute;
-		background-image: url("../sass/img/header/frame_nav_svg/Group 15.png");
+		background-image: url("../img/header/frame_nav_svg/Group 15.png");
 		left: 51.5%;
 		right: 36.5%;
 		top: -11.71%;
@@ -335,7 +335,7 @@
 	}
 	li:last-child::after {
 		content: "";
-		background-image: url("../sass/img/header/frame_nav_svg/Group .png");
+		background-image: url("../img/header/frame_nav_svg/Group .png");
 		position: absolute;
 		left: 83.9%;
 		right: 4.07%;

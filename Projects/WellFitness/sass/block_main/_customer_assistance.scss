@@ -1,0 +1,76 @@
+// !!! block_main_customer assistance - помощь клиенту
+
+.customer_assistance {
+	padding: 125px 0px 40px;
+	width: 1408px;
+	height: 500px;
+	margin: 0 auto;
+	ul {
+		display: grid;
+		grid-template-columns: repeat(4, 352px);
+		grid-template-rows: repeat(1, 305px);
+		background: #ffffff;
+		border: 1px solid rgba(133, 143, 164, 0.2);
+		border-radius: 6px 0px 0px 6px;
+		li {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 102px 46.5px 25px;
+			border: 1px solid rgba(133, 143, 164, 0.2);
+			// border: 1px solid red;
+			img {
+				position: absolute;
+				width: 72px;
+				height: 72px;
+				left: 140px;
+				top: 30px;
+			}
+			h3 {
+				margin-top: 20px;
+				width: 259px;
+				height: 48px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 150%;
+				text-align: center;
+				color: #384255;
+				width: 257.51px;
+				height: 72px;
+				margin-bottom: 20px;
+			}
+			a {
+				// position: absolute;
+				width: 150px;
+				height: 17px;
+				position: relative;
+				font-family: "Inter", sans-serif;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				color: #f53b49;
+				margin-left: auto;
+				margin-right: auto;
+				&::after {
+					content: "";
+					background: url("../img/main/main_customer_assistance/arrow.png") no-repeat;
+					position: absolute;
+					padding: 4px 0px 0px;
+					width: 10px;
+					height: 10px;
+					margin-left: 8px;
+					top: 1.5px;
+				}
+			}
+
+			a:hover {
+				content: "";
+				background-color: #ff818a;
+				// background-image: url("../img/main/main_customer_assistance/hand_phone.png");
+				color: white;
+			}
+		}
+	}
+}
