@@ -75,11 +75,7 @@
 			color: #fff;
 		}
 	}
-	// !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
-	// !!! из block_contacts второго li
-	// &:hover {
-	// 	color: #fff;
-	// }
+	
 
 	// .block_contacts - номера телефонов, Email, рассылки
 	.block_contacts {
@@ -106,7 +102,7 @@
 					&::after {
 						content: "";
 						position: absolute;
-						background-image: url("../sass/img/footer/vector_рассылка.png");
+						background-image: url("../img/footer/vector_рассылка.png");
 						width: 20px;
 						height: 20px;
 						right: -40px;
@@ -173,7 +169,12 @@
 				}
 			}
 		}
-	}
+	}// !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
+	// !!! из block_contacts второго li
+	// .block_contacts :hover {
+	// 	color: #fff;
+	// }
+
 
 	// !!! social_links - социальные ссылки
 	.social_links {
@@ -198,6 +199,8 @@
 			// messengers - соц. сети
 			.messengers {
 				margin-left: 205px;
+				fill: #909cb5;
+
 				ul {
 					display: flex;
 					flex-direction: row;
@@ -205,7 +208,6 @@
 					gap: 10px;
 					width: 92px;
 					height: 24px;
-					opacity: 0.5;
 					.instagram {
 						width: 24px;
 						height: 24px;
@@ -218,13 +220,16 @@
 						width: 24px;
 						height: 24px;
 					}
-					a {
+					svg {
+						fill: inherit;
+						stroke: inherit;
+						stroke-width: inherit;
 						transition: 200ms;
 						transition-timing-function: ease-in-out;
 					}
 				}
 			}
-			.messengers :hover {
+			.messengers svg:hover {
 				fill: #fff;
 				stroke: transform;
 				transition: 200ms;
@@ -232,19 +237,19 @@
 
 			// btn  for_partners and for_dealers - кнопки, для партнёров и для дилеров
 			.footer_partners {
-				margin-left: 148px;
+				margin-left: 138px;
 				ul {
 					display: flex;
 					flex-direction: row;
 					align-items: center;
 					gap: 30px;
-					width: 290px;
+					width: 300px;
 					height: 37px;
 					.btn_for_partners {
 						position: relative;
 						padding: 10px;
-						width: 144px;
-						height: 37px;
+						// width: 144px;
+						// height: 37px;
 						border: 1px solid rgba(144, 156, 181, 0.5);
 						border-radius: 6px;
 						/* txt / button */
@@ -268,7 +273,7 @@
 						color: #858fa4;
 					}
 				}
-							.btn_for_dealers:hover,
+				.btn_for_dealers:hover,
 				.btn_for_partners:hover {
 					background: #384255;
 					color: #ffffff;
@@ -278,6 +283,8 @@
 			// payment_cards - карты оплаты
 			.payment_cards {
 				margin-left: 77px;
+				// задаём цвет родителю и убираем его из "inline кода svg"
+				fill: #858fa4;
 				ul {
 					display: flex;
 					flex-direction: row;
@@ -301,30 +308,32 @@
 						width: 54.12px;
 						height: 20px;
 					}
-					a {
+					// задаём цвет - наследовать от родителя
+					svg {
+						fill: inherit;
+						stroke: inherit;
+						stroke-width: inherit;
 						transition: 200ms;
 						transition-timing-function: ease-in-out;
 					}
 				}
 			}
-
-			.payment_cards :hover {
+			//  меняем цвет картинки - fill, цвет линий - stroke, толщину линий - stroke-width
+			.payment_cards svg:hover {
 				fill: #fff;
-				// stroke: #fff;
 				transition: 200ms;
 			}
 		}
 	}
 }
-		//  !!! copyright - защита авторских прав
-		.copyright {
-			margin-top: 17px;
-			margin-left: 255px;
-			p {
-				font-size: 14px;
-				line-height: 140%;
-				color: #858fa4;
-			}
-		}
-	
 
+//  !!! copyright - защита авторских прав
+.copyright {
+	margin-top: 17px;
+	margin-left: 255px;
+	p {
+		font-size: 14px;
+		line-height: 140%;
+		color: #858fa4;
+	}
+}

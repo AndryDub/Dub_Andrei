@@ -178,7 +178,8 @@
 }
 .nav_menu > li {
 	display: inline-flex;
-	// outline: 1px solid brown; обводка для элементов li
+	// обводка для элементов li
+	// outline: 1px solid brown; 
 }
 .nav_menu > li + li {
 	margin-left: 20px;
@@ -288,7 +289,7 @@
 	left: 100%;
 }
 
-// <!-- Nav меню с корзиной и др. -->
+//  !!! Nav меню с корзиной и др. 
 .frame_nav {
 	position: relative;
 	display: flex;
