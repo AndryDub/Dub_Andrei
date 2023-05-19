@@ -7,8 +7,6 @@ body {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  height: 15000px;
-  border: 3px solid red;
 }
 
 a {
@@ -405,6 +403,9 @@ header .conteiner_header .btn_come_in a {
   width: 33.33%;
   padding: 10px;
   background-color: #ccc;
+}
+.conteiner_nav .row .column img {
+  width: 140px;
 }
 .conteiner_nav .row .column a {
   color: black;
@@ -1060,7 +1061,7 @@ header .conteiner_header .btn_come_in a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 1410px;
-  height: 1203px;
+  height: 1300px;
   margin: 0 auto;
 }
 .categories_simulators_for_home p {
@@ -1096,7 +1097,7 @@ header .conteiner_header .btn_come_in a {
   grid-template-columns: repeat(4, 330px);
   grid-template-rows: 521px 521px;
   width: 1410px;
-  height: 1072px;
+  height: auto;
   margin-top: 54px;
 }
 .container_links_simulators_for_home .categories_links_for_home {
@@ -1222,7 +1223,7 @@ header .conteiner_header .btn_come_in a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 1410px;
-  height: 1688px;
+  height: 1800px;
   margin: 0 auto;
 }
 .categories_simulators_for_fitness_clubs p {
@@ -1258,7 +1259,7 @@ header .conteiner_header .btn_come_in a {
   grid-template-columns: repeat(3, 450px);
   grid-template-rows: 494px 494px 494px;
   width: 1410px;
-  height: 1688px;
+  height: auto;
   margin-top: 54px;
 }
 .container_links_simulators_fitness_clubs .categories_links_fitness_clubs {
@@ -2395,6 +2396,218 @@ header .conteiner_header .btn_come_in a {
   transition: 0.6s;
 }
 
+.link_Bowflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1410px;
+  height: 1931px;
+  margin: 0 auto;
+}
+.link_Bowflex .tab {
+  position: relative;
+  width: 1410px;
+  height: 80px;
+  padding-top: 60px;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(56, 66, 85, 0.6);
+  left: 24px;
+}
+.link_Bowflex .tab::before {
+  content: "";
+  background-image: url("../img/main/main_popular_brands/Vector.png");
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -24px;
+}
+.link_Bowflex h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 110%;
+  color: #1a1a25;
+  margin-top: 30px;
+}
+
+.container_Bowflex_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 1410px;
+  height: 1628px;
+  padding: 0px 0px 60px;
+  gap: 30px;
+  margin-top: 30px;
+}
+.container_Bowflex_description .logo_and_website_Bowflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 0px 60px;
+  width: 1410px;
+  height: 497px;
+  border-radius: 6px;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .btn_back .btn_Bowflex_back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px 0px 20px;
+  gap: 10px;
+  width: 44px;
+  height: 37px;
+  /* txt / button */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4b7ee8;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul {
+  display: grid;
+  grid-template-columns: repeat(2, 705px);
+  grid-template-rows: 400px;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 73px 64px 58px;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul li:nth-child(1) .logo_Bowflex {
+  width: 326px;
+  height: 35px;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul li:nth-child(1) p {
+  margin-top: 43px;
+  width: 538px;
+  height: 189px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1a1a25;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul li:nth-child(1) a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #4b7ee8;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul li:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.container_Bowflex_description .logo_and_website_Bowflex .website_and_img_Bowflex ul li:nth-child(2) img {
+  border-radius: 0px 6px 6px 0px;
+}
+.container_Bowflex_description .description_Bowflex .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 60px;
+  width: 1410px;
+  height: 1220px;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin: 0 240px;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(1) p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #1a1a25;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(2) .row {
+  display: grid;
+  grid-template-columns: repeat(2, 690px);
+  grid-template-rows: 418px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  width: 1410px;
+  border-bottom: 2px solid rgba(133, 143, 164, 0.5);
+  padding-bottom: 60px;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(2) .row li:first-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(2) .row li:first-child img {
+  width: 690px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 6px 0 0 6px;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(2) .row li:last-child {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 47px 20px;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(2) .row li:last-child p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #1a1a25;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin: 0 240px;
+}
+.container_Bowflex_description .description_Bowflex .column li:nth-child(3) p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #1a1a25;
+}
+
 .customer_assistance {
   padding: 125px 0px 40px;
   width: 1408px;
@@ -2480,8 +2693,8 @@ header .conteiner_header .btn_come_in a {
 .customer_assistance ul li:hover svg {
   left: 30px;
   top: 20px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .customer_assistance ul li:hover h3 {
   text-align: start;
@@ -2795,6 +3008,471 @@ header .conteiner_header .btn_come_in a {
   border-width: 8px;
   border-style: solid;
   border-color: rgba(130, 127, 127, 0.8) transparent transparent transparent;
+}
+
+.links_about_company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1410px;
+  height: 4220px;
+  margin: 0 auto;
+}
+.links_about_company .tab {
+  position: relative;
+  width: 1410px;
+  height: 80px;
+  padding-top: 60px;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(56, 66, 85, 0.6);
+  left: 24px;
+}
+.links_about_company .tab::before {
+  content: "";
+  background-image: url("../img/main/main_about_company/Vector_home.png");
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -24px;
+}
+.links_about_company h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 110%;
+  color: #1a1a25;
+  margin-top: 30px;
+}
+
+.start_page_logo ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 500px;
+  margin-top: 30px;
+}
+.start_page_logo ul li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 60px 110px 60px 60px;
+  width: 577px;
+  height: 500px;
+  background: #1a1a25;
+}
+.start_page_logo ul li:nth-child(1) p {
+  width: 406px;
+  height: 264px;
+  font-size: 34px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.start_page_logo ul li:nth-child(1) p span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  color: #f53b49;
+}
+.start_page_logo ul li:nth-child(1) li:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.start_page_logo ul li:nth-child(1) li:nth-child(2) img {
+  width: 833px;
+  height: 500px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.company_founded {
+  display: grid;
+  grid-template-columns: [start] 210px [line2] 1020px [end];
+  grid-auto-rows: auto;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  padding: 0px 0px 120px;
+  height: 3500;
+  margin-top: 30px;
+}
+.company_founded .links_our_achievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 210px;
+  height: auto;
+  border-right: 1px solid rgba(133, 143, 164, 0.2);
+}
+.company_founded .links_our_achievements li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px 0px;
+  gap: 20px;
+  width: 210px;
+  height: 64px;
+  border-bottom: 1px solid rgba(133, 143, 164, 0.2);
+}
+.company_founded .links_our_achievements li a {
+  width: 210px;
+  height: 19px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #384255;
+}
+.company_founded .links_our_achievements li a:hover {
+  color: #f53b49;
+}
+
+.description_of_achievements_about_company ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px 0px 120px;
+  gap: 30px;
+  width: 1020px;
+  height: auto;
+}
+.description_of_achievements_about_company ul li:first-child p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #384255;
+}
+.description_of_achievements_about_company ul .bottom_band {
+  width: 1020px;
+  height: 0px;
+  border: 1px solid rgba(133, 143, 164, 0.2);
+}
+.description_of_achievements_about_company ul .sales_geography {
+  /* Tooltip text */
+  /* Показывать текст всплывающей подсказки при наведении курсора на контейнер всплывающей подсказки */
+}
+.description_of_achievements_about_company ul .sales_geography .map ul {
+  position: relative;
+  width: 1023px;
+  height: 650px;
+  margin-right: 60px;
+  background-image: url("../img/main/main_about_company/map_city.png");
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Saint-Petersburg {
+  position: absolute;
+  top: 319px;
+  left: 109px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Yaroslavl {
+  position: absolute;
+  top: 348px;
+  left: 161px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Moscow {
+  position: absolute;
+  top: 365px;
+  left: 144px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Nizhny_Novgorod {
+  position: absolute;
+  top: 364px;
+  left: 227px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Volzhsk {
+  position: absolute;
+  top: 383px;
+  left: 199px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Permian {
+  position: absolute;
+  top: 401px;
+  left: 251px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Ekaterinburg {
+  position: absolute;
+  top: 387px;
+  left: 299px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Tyumen {
+  position: absolute;
+  top: 404px;
+  left: 340px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Omsk {
+  position: absolute;
+  top: 442px;
+  left: 374px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Novosibirsk {
+  position: absolute;
+  top: 432px;
+  left: 458px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Krasnoyarsk {
+  position: absolute;
+  top: 387px;
+  left: 504px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Khabarovsk {
+  position: absolute;
+  top: 546px;
+  left: 800px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Vladivostok {
+  position: absolute;
+  top: 590px;
+  left: 792px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Rostov {
+  position: absolute;
+  top: 451px;
+  left: 150px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Volgograd {
+  position: absolute;
+  top: 461px;
+  left: 187px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Simferopol {
+  position: absolute;
+  top: 499px;
+  left: 103px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Krasnodar {
+  position: absolute;
+  top: 499px;
+  left: 142px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Stavropol {
+  position: absolute;
+  top: 519px;
+  left: 174px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul .Essentuki {
+  position: absolute;
+  top: 523px;
+  left: 152px;
+}
+.description_of_achievements_about_company ul .sales_geography .map ul img.city {
+  width: 150px;
+  height: 130px;
+  padding: 5px;
+}
+.description_of_achievements_about_company ul .sales_geography .span {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  width: 10px;
+  height: 10px;
+  background: #f53b49;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.description_of_achievements_about_company ul .sales_geography .span:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #f53b49;
+  -webkit-animation: animate 1.5s infinite normal ease-out;
+          animation: animate 1.5s infinite normal ease-out;
+}
+@keyframes animate {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+.description_of_achievements_about_company ul .sales_geography .tooltip {
+  position: relative;
+  display: block;
+  border-bottom: 1px dotted #06e667;
+  /* Если вам нужны точки под наводимым текстом */
+}
+.description_of_achievements_about_company ul .sales_geography .tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 14px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(130, 127, 127, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 6px 0 0 0;
+  border-radius: 6px;
+  delay: 550;
+  /* Расположить текст всплывающей подсказки - относительно объекта*/
+  position: absolute;
+  left: -75px;
+  bottom: 15px;
+  z-index: 1;
+}
+.description_of_achievements_about_company ul .sales_geography .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.description_of_achievements_about_company ul .sales_geography .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  /* В нижней части всплывающей подсказки - цвет*/
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(130, 127, 127, 0.8) transparent transparent transparent;
+}
+.description_of_achievements_about_company ul .we_today {
+  width: 1020px;
+  height: 280px;
+  gap: initial;
+  padding: initial;
+}
+.description_of_achievements_about_company ul .we_today h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #384255;
+  margin-bottom: 10px;
+}
+.description_of_achievements_about_company ul .we_today li {
+  list-style-type: disc;
+  margin-left: 25px;
+}
+.description_of_achievements_about_company ul .we_today li p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #384255;
+}
+.description_of_achievements_about_company ul .img_we_today ul {
+  display: grid;
+  grid-template-columns: repeat(2, 495px);
+  grid-template-rows: 320px 320px;
+  gap: 30px;
+  width: 1020px;
+  height: 670px;
+}
+.description_of_achievements_about_company ul .img_we_today ul li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.description_of_achievements_about_company ul .img_we_today ul li:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.description_of_achievements_about_company ul .img_we_today ul li:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.description_of_achievements_about_company ul .img_we_today ul li:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.description_of_achievements_about_company ul .img_we_today ul img {
+  width: 495px;
+  height: 320px;
+}
+.description_of_achievements_about_company ul .reason_for_success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 1020px;
+  height: 415px;
+}
+.description_of_achievements_about_company ul .reason_for_success h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #384255;
+}
+.description_of_achievements_about_company ul .reason_for_success p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #384255;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul {
+  display: grid;
+  grid-template-columns: repeat(2, 495px);
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+  width: 1020px;
+  height: 630px;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(1) img {
+  width: 495px;
+  height: 300px;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 60px 0;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(2) p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #384255;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 60px 0;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(3) p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #384255;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.description_of_achievements_about_company ul .img_reason_for_success ul li:nth-child(4) img {
+  width: 495px;
+  height: 300px;
 }
 
 .become_partner {

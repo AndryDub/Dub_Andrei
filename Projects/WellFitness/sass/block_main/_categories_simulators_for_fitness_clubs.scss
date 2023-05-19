@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 1410px;
-	height: 1688px;
+	height: 1800px;
 	margin: 0 auto;
 	p {
 		position: relative;
@@ -39,7 +39,7 @@
 	grid-template-columns: repeat(3, 450px);
 	grid-template-rows: 494px 494px 494px;
 	width: 1410px;
-	height: 1688px;
+	height: auto;
 	margin-top: 54px;
 	// border: 1px solid red;
 	.categories_links_fitness_clubs {

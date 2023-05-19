@@ -66,7 +66,7 @@
 		padding: 16px;
 		color: white;
 	}
-	// Открытие каталога
+	// !!! Открытие каталога
 	.dropdown:hover .dropdown-content {
 		display: block;
 		z-index: 1;
@@ -85,6 +85,9 @@
 			width: 33.33%;
 			padding: 10px;
 			background-color: #ccc;
+			img {
+				width: 140px;
+			}
 			a {
 				color: black;
 				padding: 16px;
@@ -179,7 +182,7 @@
 .nav_menu > li {
 	display: inline-flex;
 	// обводка для элементов li
-	// outline: 1px solid brown; 
+	// outline: 1px solid brown;
 }
 .nav_menu > li + li {
 	margin-left: 20px;
@@ -289,7 +292,7 @@
 	left: 100%;
 }
 
-//  !!! Nav меню с корзиной и др. 
+//  !!! Nav меню с корзиной и др.
 .frame_nav {
 	position: relative;
 	display: flex;
@@ -352,5 +355,3 @@
 		}
 	}
 }
-
-
