@@ -6,6 +6,8 @@
 	background: #1a1a25;
 	box-shadow: 0px 10px 50px rgba(133, 143, 164, 0.05);
 	padding: 80px 0 50px;
+	margin-left: auto;
+	margin-right: auto;
 	.links_and_contacts {
 		display: flex;
 		flex-wrap: wrap;
@@ -68,6 +70,7 @@
 					font-size: 16px;
 					line-height: 130%;
 					color: #858fa4;
+					padding: 7px 0;
 				}
 			}
 		}
@@ -75,7 +78,6 @@
 			color: #fff;
 		}
 	}
-	
 
 	// .block_contacts - номера телефонов, Email, рассылки
 	.block_contacts {
@@ -151,7 +153,7 @@
 					}
 				}
 			}
-
+			// privacy_policy - политика конфиденциальности
 			.privacy_policy {
 				margin-top: 35px;
 				a {
@@ -160,6 +162,7 @@
 					color: #4b7ee8;
 				}
 			}
+			// public_offer - публичная офферта
 			.public_offer {
 				margin-top: 7px;
 				a {
@@ -169,12 +172,11 @@
 				}
 			}
 		}
-	}// !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
+	} // !!! при таком положении hover появляется надпись <p>Вы успешно подписались</p>
 	// !!! из block_contacts второго li
 	// .block_contacts :hover {
 	// 	color: #fff;
 	// }
-
 
 	// !!! social_links - социальные ссылки
 	.social_links {
@@ -189,7 +191,6 @@
 			width: 1410px;
 			height: 40px;
 			margin: 0 auto;
-
 			// logo - логотип
 			.footer_logo {
 				width: 275px;
@@ -200,7 +201,6 @@
 			.messengers {
 				margin-left: 205px;
 				fill: #909cb5;
-
 				ul {
 					display: flex;
 					flex-direction: row;
@@ -290,7 +290,7 @@
 					flex-direction: row;
 					align-items: center;
 					gap: 30px;
-					width: 254.12em;
+					width: 254.12px;
 					height: 40px;
 					.icon_VISA {
 						width: 40px;

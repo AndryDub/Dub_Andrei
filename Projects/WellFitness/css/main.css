@@ -151,6 +151,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("../img/header/header.png");
+  margin-left: auto;
+  margin-right: auto;
 }
 header .conteiner_header {
   display: -webkit-box;
@@ -873,6 +875,7 @@ header .conteiner_header .btn_come_in a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
   margin-top: 36px;
 }
 .banner_list ul {
@@ -1362,7 +1365,8 @@ header .conteiner_header .btn_come_in a {
   gap: 30px;
   width: 1410px;
   height: 862px;
-  margin-left: 240px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 35px;
   overflow: hidden;
 }
@@ -1915,6 +1919,8 @@ header .conteiner_header .btn_come_in a {
   position: relative;
   width: 1920px;
   height: 756px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("../img/main/main_ideas_and_selections/black_background.png");
   z-index: 0;
 }
@@ -1931,7 +1937,8 @@ header .conteiner_header .btn_come_in a {
           align-items: flex-start;
   padding: 120px 0px 100px;
   gap: 30px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 1410px;
   height: 755px;
 }
@@ -2099,6 +2106,8 @@ header .conteiner_header .btn_come_in a {
   gap: 30px;
   width: 1920px;
   height: 807px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .popular_brands .container_popular_brands {
   display: -webkit-box;
@@ -3793,6 +3802,8 @@ header .conteiner_header .btn_come_in a {
   -webkit-box-shadow: 0px 10px 50px rgba(133, 143, 164, 0.05);
           box-shadow: 0px 10px 50px rgba(133, 143, 164, 0.05);
   padding: 80px 0 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .wrapper .links_and_contacts {
   display: -webkit-box;
@@ -3897,6 +3908,7 @@ header .conteiner_header .btn_come_in a {
   font-size: 16px;
   line-height: 130%;
   color: #858fa4;
+  padding: 7px 0;
 }
 .wrapper .links_and_contacts .blocks_links :hover {
   color: #fff;
@@ -4148,7 +4160,7 @@ header .conteiner_header .btn_come_in a {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  width: 254.12em;
+  width: 254.12px;
   height: 40px;
 }
 .wrapper .social_links ul .payment_cards ul .icon_VISA {
