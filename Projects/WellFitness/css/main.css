@@ -5,8 +5,9 @@ body {
   color: #1a1a25;
   width: 1920px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  height: 15000px;
+  border: 3px solid red;
 }
 
 a {
@@ -20,19 +21,29 @@ li {
 .items li {
   position: relative;
   border-radius: 7px;
-  -webkit-transition: all 0.3s ease-in-out 0.1s;
-  transition: all 0.3s ease-in-out 0.1s;
+  -webkit-transition: all 0.5s ease-in-out 0.1s;
+  transition: all 0.5s ease-in-out 0.1s;
+  background: linear-gradient(269.61deg, rgba(255, 255, 255, 0.68) -16.49%, rgba(255, 255, 255, 0) 99.7%), linear-gradient(0deg, #c2c4ce, #c2c4ce);
 }
 
 .items li:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   -webkit-box-shadow: 2px 2px 10px 2px #938787;
           box-shadow: 2px 2px 10px 2px #938787;
-  overflow: hidden;
-  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: linear-gradient(9.93deg, rgba(72, 77, 92, 0) 25.95%, rgba(112, 121, 148, 0.2) 80.01%), #1a1a25;
+}
+
+.items li:hover :nth-child(n+1) {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.items li:hover :nth-child(n+1):hover h3 {
+  color: #ffffff;
+  -webkit-transition-duration: 0.5s ease;
+          transition-duration: 0.5s ease;
 }
 
 h2 {
@@ -151,8 +162,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("../img/header/header.png");
-  margin-left: auto;
-  margin-right: auto;
 }
 header .conteiner_header {
   display: -webkit-box;
@@ -172,6 +181,8 @@ header .conteiner_header {
   width: 1410px;
   height: 82px;
   background: #1a1a25;
+  margin-left: auto;
+  margin-right: auto;
 }
 header .conteiner_header img {
   width: 280px;
@@ -875,8 +886,9 @@ header .conteiner_header .btn_come_in a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
   margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner_list ul {
   position: relative;
@@ -971,7 +983,8 @@ header .conteiner_header .btn_come_in a {
 .for_home {
   width: 1410px;
   height: 875px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   gap: 30px;
 }
 .for_home h2 {
@@ -991,7 +1004,6 @@ header .conteiner_header .btn_come_in a {
 }
 .for_home .category_1 li:nth-child(1) h3 {
   position: absolute;
-  color: #ffffff;
   left: 30px;
   top: 36.43px;
 }
@@ -1003,8 +1015,6 @@ header .conteiner_header .btn_come_in a {
   position: absolute;
   left: 30px;
   top: 36.43px;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 .for_home .category_1 li:nth-child(3) h3 {
   position: absolute;
@@ -1025,6 +1035,11 @@ header .conteiner_header .btn_come_in a {
   position: absolute;
   left: 30.75px;
   top: 30.43px;
+}
+.for_home .category_1 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .for_home .category_2 {
   margin-top: 30px;
@@ -1053,6 +1068,11 @@ header .conteiner_header .btn_come_in a {
   position: absolute;
   left: 30px;
   top: 30px;
+}
+.for_home .category_2 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .categories_simulators_for_home {
@@ -1162,7 +1182,8 @@ header .conteiner_header .btn_come_in a {
 .for_fitness_clubs {
   width: 1410px;
   height: 725px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   gap: 30px;
 }
 .for_fitness_clubs h2 {
@@ -1182,7 +1203,6 @@ header .conteiner_header .btn_come_in a {
 }
 .for_fitness_clubs .category_3 li:nth-child(1) h3 {
   position: absolute;
-  color: #ffffff;
   left: 30px;
   top: 30px;
 }
@@ -1215,6 +1235,11 @@ header .conteiner_header .btn_come_in a {
   position: absolute;
   left: 30px;
   top: 30px;
+}
+.for_fitness_clubs .category_3 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .categories_simulators_for_fitness_clubs {
@@ -1919,8 +1944,6 @@ header .conteiner_header .btn_come_in a {
   position: relative;
   width: 1920px;
   height: 756px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url("../img/main/main_ideas_and_selections/black_background.png");
   z-index: 0;
 }
@@ -1937,8 +1960,7 @@ header .conteiner_header .btn_come_in a {
           align-items: flex-start;
   padding: 120px 0px 100px;
   gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1410px;
   height: 755px;
 }
@@ -2106,8 +2128,6 @@ header .conteiner_header .btn_come_in a {
   gap: 30px;
   width: 1920px;
   height: 807px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .popular_brands .container_popular_brands {
   display: -webkit-box;
@@ -2206,7 +2226,8 @@ header .conteiner_header .btn_come_in a {
   width: 1410px;
   height: 1245px;
   padding-bottom: 80px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .categories_links_popular_brands .tab {
   position: relative;
@@ -3802,8 +3823,6 @@ header .conteiner_header .btn_come_in a {
   -webkit-box-shadow: 0px 10px 50px rgba(133, 143, 164, 0.05);
           box-shadow: 0px 10px 50px rgba(133, 143, 164, 0.05);
   padding: 80px 0 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .wrapper .links_and_contacts {
   display: -webkit-box;
@@ -3908,7 +3927,6 @@ header .conteiner_header .btn_come_in a {
   font-size: 16px;
   line-height: 130%;
   color: #858fa4;
-  padding: 7px 0;
 }
 .wrapper .links_and_contacts .blocks_links :hover {
   color: #fff;
