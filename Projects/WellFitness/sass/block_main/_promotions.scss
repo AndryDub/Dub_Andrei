@@ -324,7 +324,7 @@
 							}
 						}
 					}
-					// корзина для покупок
+					// !!! корзина для покупок
 					.basket_buy {
 						grid-row: 4/6;
 						grid-column: 3/5;
@@ -410,7 +410,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		// align-items: center;
 		margin-top: 30px;
 		padding: 12px 20px 13px;
 		width: 200px;
